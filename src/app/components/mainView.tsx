@@ -24,19 +24,32 @@ import PlayerContext from "../context/playerContext";
 const currentWeek = weeks.length;
 
 const styles: Record<string, React.CSSProperties> = {
+  spoilerContainer: {
+    position: "absolute",
+    textAlign: "center",
+    width: "400px",
+    height: "180px",
+    padding: "20px",
+    color: "var(--component-text-color-primary)",
+    backgroundColor: "var(--component-background-color-primary)",
+    border: "1px solid var(--component-text-color-primary)",
+    zIndex: 1,
+    left: "50%",
+    marginTop: "50px",
+    transform: "translateX(-50%)",
+    borderRadius: "var(--border-radius-standard)",
+  },
   spoilersButton: {
-    color: "var(--text-color-primary)",
-    backgroundColor: "var(--background-color-primary)",
-    border: "1px solid var(--text-color-primary)",
+    marginTop: "20px",
     width: "200px",
     height: "50px",
     borderRadius: "25px",
-    left: "50%",
-    marginTop: "200px",
-    transform: "translateX(-50%)",
     display: "block",
-    position: "absolute",
-    zIndex: 1,
+    marginLeft: "auto",
+    marginRight: "auto",
+    border: "1px solid var(--text-color-primary)",
+    backgroundColor: "var(--background-color-primary)",
+    color: "var(--text-color-primary)",
   },
   spoilersButtonHidden: {
     zIndex: -1,
@@ -59,6 +72,9 @@ const styles: Record<string, React.CSSProperties> = {
   },
   poolTitle: {
     transform: "var(--pool-title-transform)",
+  },
+  spoilersSubtitle: {
+    color: "var(--component-text-color-secondary)",
   },
 };
 
@@ -92,15 +108,21 @@ export default function MainView(props: {
 
   function SpoilersButton() {
     return (
-      <button
-        style={{
-          ...styles.spoilersButton,
-          ...(!active && styles.spoilersButtonHidden),
-        }}
-        onClick={() => onRevealChange(true)}
-      >
-        Reveal Spoilers
-      </button>
+      <div style={styles.spoilerContainer}>
+        <h2>Spoilers ahead!</h2>
+        <h6 style={styles.spoilersSubtitle}>
+          Reveal spoilers from {airDates[currentWeek - 1]}?
+        </h6>
+        <button
+          style={{
+            ...styles.spoilersButton,
+            ...(!active && styles.spoilersButtonHidden),
+          }}
+          onClick={() => onRevealChange(true)}
+        >
+          Accept
+        </button>
+      </div>
     );
   }
 

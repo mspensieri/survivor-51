@@ -22,6 +22,7 @@ const USE_UPSIDE_DOWN = false;
 const initialSide = storage.getItem("lastSide") || "front";
 const initialActiveTab = storage.getItem("lastActiveTab") || "leaderboard";
 const initialShakeState = storage.getItem("shakeState") || "enabled";
+const weekNumberSpoiled = Number(storage.getItem("weekNumberSpoiled") || "0");
 
 const currentWeek = weeks.length;
 const teamRankings = getTeamRankings(teams);
@@ -49,7 +50,7 @@ const styles: Record<string, React.CSSProperties> = {
 };
 
 function Page() {
-  const [reveal, setReveal] = useState(false);
+  const [reveal, setReveal] = useState(weekNumberSpoiled >= currentWeek);
   const [isSmallScreen, setIsSmallScreen] = useState(true);
   const [screenWidth, setScreenWidth] = useState(-1);
   const [selectedWeek, setSelectedWeek] = useState(currentWeek - 1);
@@ -84,6 +85,11 @@ function Page() {
   function updateTabAndStore(tab: string) {
     setActiveTab(tab);
     storage.setItem("lastActiveTab", tab);
+  }
+
+  function acceptSpoilers() {
+    setReveal(true);
+    storage.setItem("weekNumberSpoiled", String(currentWeek));
   }
 
   if (USE_UPSIDE_DOWN) {
@@ -122,7 +128,7 @@ function Page() {
                     selectedWeek={selectedWeek}
                     onWeekSelected={setSelectedWeek}
                     reveal={reveal}
-                    onRevealChange={setReveal}
+                    onRevealChange={acceptSpoilers}
                     isSmallScreen={isSmallScreen}
                     screenWidth={screenWidth}
                     active={side === "front"}
@@ -141,7 +147,7 @@ function Page() {
                     selectedWeek={selectedWeek}
                     onWeekSelected={setSelectedWeek}
                     reveal={reveal}
-                    onRevealChange={setReveal}
+                    onRevealChange={acceptSpoilers}
                     isSmallScreen={isSmallScreen}
                     screenWidth={screenWidth}
                     active={side === "back"}
@@ -165,7 +171,7 @@ function Page() {
                 selectedWeek={selectedWeek}
                 onWeekSelected={setSelectedWeek}
                 reveal={reveal}
-                onRevealChange={setReveal}
+                onRevealChange={acceptSpoilers}
                 isSmallScreen={isSmallScreen}
                 screenWidth={screenWidth}
                 active={true}
