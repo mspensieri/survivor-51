@@ -104,7 +104,6 @@ export type Player = {
   key: PlayerKeys;
   name: string;
   tribe: PlayerTribes;
-  history: string;
 };
 
 export type Team = {

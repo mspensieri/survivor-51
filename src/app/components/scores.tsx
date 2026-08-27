@@ -9,7 +9,7 @@ import RuleSetContext from "../context/ruleSetContext";
 import { players } from "../data/players";
 
 const styles: Record<string, React.CSSProperties> = {
-  badgeContainer: { width: "100%" },
+  badgeContainer: { width: "100%", marginTop: "10px" },
   badge: {
     width: "100%",
     lineHeight: "inherit",
@@ -108,10 +108,6 @@ const styles: Record<string, React.CSSProperties> = {
     height: "25px",
   },
   tableBody: { verticalAlign: "bottom", height: "25px" },
-  historyContainer: {
-    borderLeft: "1px solid var(--component-text-color-secondary)",
-  },
-  playerCardFooter: { marginBottom: "5px" },
 };
 
 const tribeColors = {
@@ -322,7 +318,10 @@ export default function Scores(props: {
                     lastWeekScore?.[ruleSet].rank,
                   )}
                 </div>
-                <div>{/* Empty div for spacing */}</div>
+                <span className="justify-self-center" style={styles.tinyText}>
+                  {popularity} teams (
+                  {Math.floor((popularity / teams.length) * 100)}%)
+                </span>
                 <div className="justify-self-center" style={styles.tinyText}>
                   {getScoreDiff(
                     score[ruleSet].total,
@@ -384,17 +383,6 @@ export default function Scores(props: {
                       </tr>
                     </tbody>
                   </table>
-                </div>
-              </div>
-              <div className="grid grid-cols-2" style={styles.playerCardFooter}>
-                <div className="text-center">
-                  <span style={styles.smallText}>
-                    {popularity} teams (
-                    {Math.floor((popularity / teams.length) * 100)}%)
-                  </span>
-                </div>
-                <div className="text-center" style={styles.historyContainer}>
-                  <span style={styles.smallText}>{player.history}</span>
                 </div>
               </div>
               <div style={styles.badgeContainer}>{getBadge(score)}</div>
