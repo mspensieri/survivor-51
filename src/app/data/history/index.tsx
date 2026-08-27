@@ -1,4 +1,5 @@
 import { SeasonHistory, Team } from "../types";
+import standings50 from "./50";
 import standings49 from "./49";
 import standings48 from "./48";
 import standings47 from "./47";
@@ -11,6 +12,7 @@ import standings41 from "./41";
 import standings40 from "./40";
 
 const seasons: Array<SeasonHistory> = [
+  standings50,
   standings49,
   standings48,
   standings47,
@@ -38,7 +40,7 @@ function calculateRating(rank: number, teamCount: number): number {
 }
 
 export function computeHistory(
-  teams: Array<Omit<Team, "history">>
+  teams: Array<Omit<Team, "history">>,
 ): Array<Team> {
   return teams.map((team) => {
     const history: Team["history"] = {
@@ -48,13 +50,13 @@ export function computeHistory(
 
     for (const seasonResults of seasons) {
       const placement = seasonResults.placements.find((r) =>
-        r.cids.some((cid) => team.captain?.ids.includes(cid))
+        r.cids.some((cid) => team.captain?.ids.includes(cid)),
       );
 
       if (placement) {
         const rating = calculateRating(
           placement.rank,
-          seasonResults.placements.length
+          seasonResults.placements.length,
         );
 
         history.placements.push({
