@@ -253,7 +253,7 @@ export default function Scores(props: {
                     src={
                       hideSpoilers
                         ? "mystery-man.png"
-                        : `${player.name.toLowerCase()}.jpg`
+                        : `${player.key.toLowerCase()}.jpg`
                     }
                     alt={player.name}
                     width={72}
@@ -335,7 +335,7 @@ export default function Scores(props: {
                   src={
                     hideSpoilers
                       ? "mystery-man.png"
-                      : `${player.name.toLowerCase()}.jpg`
+                      : `${player.key.toLowerCase()}.jpg`
                   }
                   alt={player.name}
                   width={95}

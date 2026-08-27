@@ -4,7 +4,7 @@ import { computePlayerTotal } from "./playerStatsProvider";
 export function computeTeamScore(
   team: Team,
   weekNumber: number,
-  ruleSet: RuleSet
+  ruleSet: RuleSet,
 ) {
   let score = 0;
   let fullTimePlayers = [...team.players];
@@ -17,7 +17,7 @@ export function computeTeamScore(
     score -= computePlayerTotal(
       team.swap.playerIn,
       team.swap.week - 1,
-      ruleSet
+      ruleSet,
     );
   }
 

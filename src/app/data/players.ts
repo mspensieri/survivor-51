@@ -2,75 +2,75 @@ import { Player, PlayerKeys, PlayerTribes } from "./types";
 const { VATU, CILA, KALO } = PlayerTribes;
 
 export const PLAYERS: Record<PlayerKeys, Player> = {
-  [PlayerKeys.ANGELINA]: {
-    key: PlayerKeys.ANGELINA,
-    name: "Angelina",
+  [PlayerKeys.AALIYAH]: {
+    key: PlayerKeys.AALIYAH,
+    name: "Aaliyah",
     tribe: VATU,
     history: "Season 37",
   },
-  [PlayerKeys.AUBRY]: {
-    key: PlayerKeys.AUBRY,
-    name: "Aubry",
+  [PlayerKeys.ALEXIS]: {
+    key: PlayerKeys.ALEXIS,
+    name: "Alexis",
     tribe: VATU,
     history: "Seasons 32, 34, 38",
   },
-  [PlayerKeys.CHARLIE]: {
-    key: PlayerKeys.CHARLIE,
-    name: "Charlie",
+  [PlayerKeys.AN]: {
+    key: PlayerKeys.AN,
+    name: "Thien An",
     tribe: KALO,
     history: "Season 46",
   },
-  [PlayerKeys.CHRISSY]: {
-    key: PlayerKeys.CHRISSY,
-    name: "Chrissy",
+  [PlayerKeys.ANA]: {
+    key: PlayerKeys.ANA,
+    name: "Ana",
     tribe: KALO,
     history: "Season 35",
   },
-  [PlayerKeys.CHRISTIAN]: {
-    key: PlayerKeys.CHRISTIAN,
-    name: "Christian",
+  [PlayerKeys.JELLY]: {
+    key: PlayerKeys.JELLY,
+    name: "Jelly",
     tribe: CILA,
     history: "Season 37",
   },
-  [PlayerKeys.CIRIE]: {
-    key: PlayerKeys.CIRIE,
-    name: "Cirie",
+  [PlayerKeys.BRADY]: {
+    key: PlayerKeys.BRADY,
+    name: "Brady",
     tribe: CILA,
     history: "Seasons 12, 16, 20, 34",
   },
-  [PlayerKeys.COACH]: {
-    key: PlayerKeys.COACH,
-    name: "Coach",
+  [PlayerKeys.CARTER]: {
+    key: PlayerKeys.CARTER,
+    name: "Carter",
     tribe: KALO,
     history: "Seasons 18, 20, 23",
   },
-  [PlayerKeys.COLBY]: {
-    key: PlayerKeys.COLBY,
-    name: "Colby",
+  [PlayerKeys.CRISTIAN]: {
+    key: PlayerKeys.CRISTIAN,
+    name: "Cristian",
     tribe: VATU,
     history: "Seasons 2, 8, 20",
   },
-  [PlayerKeys.DEE]: {
-    key: PlayerKeys.DEE,
-    name: "Dee",
+  [PlayerKeys.KILBY]: {
+    key: PlayerKeys.KILBY,
+    name: "Kilby",
     tribe: KALO,
     history: "Season 45",
   },
-  [PlayerKeys.EMILY]: {
-    key: PlayerKeys.EMILY,
-    name: "Emily",
+  [PlayerKeys.DEVIN]: {
+    key: PlayerKeys.DEVIN,
+    name: "Devin",
     tribe: CILA,
     history: "Season 45",
   },
-  [PlayerKeys.GENEVIEVE]: {
-    key: PlayerKeys.GENEVIEVE,
-    name: "Genevieve",
+  [PlayerKeys.ERIC]: {
+    key: PlayerKeys.ERIC,
+    name: "Eric",
     tribe: VATU,
     history: "Season 47",
   },
-  [PlayerKeys.RIZO]: {
-    key: PlayerKeys.RIZO,
-    name: "Rizo",
+  [PlayerKeys.SHARONDA]: {
+    key: PlayerKeys.SHARONDA,
+    name: "Sharonda",
     tribe: VATU,
     history: "Season 49",
   },
@@ -86,27 +86,27 @@ export const PLAYERS: Record<PlayerKeys, Player> = {
     tribe: CILA,
     history: "Season 49",
   },
-  [PlayerKeys.JOE]: {
-    key: PlayerKeys.JOE,
-    name: "Joe",
+  [PlayerKeys.KRISTIN]: {
+    key: PlayerKeys.KRISTIN,
+    name: "Kristin",
     tribe: CILA,
     history: "Season 48",
   },
-  [PlayerKeys.JONATHAN]: {
-    key: PlayerKeys.JONATHAN,
-    name: "Jonathan",
+  [PlayerKeys.LEWIS]: {
+    key: PlayerKeys.LEWIS,
+    name: "Lewis",
     tribe: KALO,
     history: "Season 42",
   },
-  [PlayerKeys.KAMILLA]: {
-    key: PlayerKeys.KAMILLA,
-    name: "Kamilla",
+  [PlayerKeys.LINNEA]: {
+    key: PlayerKeys.LINNEA,
+    name: "Linnea",
     tribe: KALO,
     history: "Season 48",
   },
-  [PlayerKeys.KYLE]: {
-    key: PlayerKeys.KYLE,
-    name: "Kyle",
+  [PlayerKeys.MAGGIE]: {
+    key: PlayerKeys.MAGGIE,
+    name: "Maggie",
     tribe: VATU,
     history: "Season 48",
   },
@@ -116,21 +116,21 @@ export const PLAYERS: Record<PlayerKeys, Player> = {
     tribe: KALO,
     history: "Season 37",
   },
-  [PlayerKeys.OZZY]: {
-    key: PlayerKeys.OZZY,
-    name: "Ozzy",
+  [PlayerKeys.ORI]: {
+    key: PlayerKeys.ORI,
+    name: "Ori",
     tribe: CILA,
     history: "Seasons 13, 16, 23, 34",
   },
-  [PlayerKeys.Q]: {
-    key: PlayerKeys.Q,
-    name: "Q",
+  [PlayerKeys.PATT]: {
+    key: PlayerKeys.PATT,
+    name: "Patt",
     tribe: VATU,
     history: "Season 46",
   },
-  [PlayerKeys.RICK]: {
-    key: PlayerKeys.RICK,
-    name: "Rick",
+  [PlayerKeys.ROB]: {
+    key: PlayerKeys.ROB,
+    name: "Rob",
     tribe: CILA,
     history: "Season 38",
   },

@@ -27,27 +27,27 @@ interface Week extends Partial<Record<PlayerKeys, WeeklyPoints>> {
 }
 
 const {
-  ANGELINA,
-  AUBRY,
-  CHARLIE,
-  CHRISSY,
-  CHRISTIAN,
-  CIRIE,
-  COACH,
-  COLBY,
-  DEE,
-  EMILY,
-  GENEVIEVE,
+  AALIYAH,
+  ALEXIS,
+  AN,
+  ANA,
+  JELLY,
+  BRADY,
+  CARTER,
+  CRISTIAN,
+  KILBY,
+  DEVIN,
+  ERIC,
   JENNA,
-  JOE,
-  JONATHAN,
-  KAMILLA,
-  KYLE,
+  KRISTIN,
+  LEWIS,
+  LINNEA,
+  MAGGIE,
   MIKE,
-  OZZY,
-  Q,
-  RICK,
-  RIZO,
+  ORI,
+  PATT,
+  ROB,
+  SHARONDA,
   SAVANNAH,
   STEPHENIE,
   TIFFANY,
@@ -55,75 +55,75 @@ const {
 
 export const weeks: Array<Week> = [
   {
-    eliminated: [JENNA, KYLE],
-    [ANGELINA]: {
+    eliminated: [JENNA, MAGGIE],
+    [AALIYAH]: {
       [RuleSet.STANDARD]: {
         teamImmunity: 1,
       },
     },
-    [AUBRY]: {
+    [ALEXIS]: {
       [RuleSet.STANDARD]: {
         teamImmunity: 1,
       },
     },
-    [CHARLIE]: {
+    [AN]: {
       [RuleSet.STANDARD]: {
         teamImmunity: 1,
       },
     },
-    [CHRISSY]: {
+    [ANA]: {
       [RuleSet.STANDARD]: {
         teamImmunity: 1,
       },
     },
-    [CHRISTIAN]: {
+    [JELLY]: {
       [RuleSet.STANDARD]: {
         votes: 1,
       },
     },
-    [CIRIE]: {
+    [BRADY]: {
       [RuleSet.STANDARD]: {
         votes: 1,
       },
     },
-    [COACH]: {
+    [CARTER]: {
       [RuleSet.STANDARD]: {
         teamImmunity: 1,
       },
     },
-    [COLBY]: {
+    [CRISTIAN]: {
       [RuleSet.STANDARD]: {
         teamImmunity: 1,
       },
     },
-    [DEE]: {
+    [KILBY]: {
       [RuleSet.STANDARD]: {
         teamImmunity: 1,
       },
     },
-    [EMILY]: {
+    [DEVIN]: {
       [RuleSet.STANDARD]: { votes: 1 },
     },
-    [GENEVIEVE]: {
+    [ERIC]: {
       [RuleSet.STANDARD]: {
         teamImmunity: 1,
         idolFound: 2,
       },
     },
-    [JOE]: {
+    [KRISTIN]: {
       [RuleSet.STANDARD]: { votes: 1 },
     },
-    [JONATHAN]: {
+    [LEWIS]: {
       [RuleSet.STANDARD]: {
         teamImmunity: 1,
       },
     },
-    [KAMILLA]: {
+    [LINNEA]: {
       [RuleSet.STANDARD]: {
         teamImmunity: 1,
       },
     },
-    [KYLE]: {
+    [MAGGIE]: {
       [RuleSet.STANDARD]: {
         teamImmunity: 1,
       },
@@ -133,18 +133,18 @@ export const weeks: Array<Week> = [
         teamImmunity: 1,
       },
     },
-    [OZZY]: {
+    [ORI]: {
       [RuleSet.STANDARD]: { votes: 1 },
     },
-    [Q]: {
+    [PATT]: {
       [RuleSet.STANDARD]: {
         teamImmunity: 1,
       },
     },
-    [RICK]: {
+    [ROB]: {
       [RuleSet.STANDARD]: { votes: 1 },
     },
-    [RIZO]: {
+    [SHARONDA]: {
       [RuleSet.STANDARD]: {
         teamImmunity: 1,
       },
@@ -168,74 +168,74 @@ export const weeks: Array<Week> = [
   },
   {
     eliminated: [SAVANNAH],
-    [ANGELINA]: {
+    [AALIYAH]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         teamImmunity: 1,
       },
     },
-    [AUBRY]: {
+    [ALEXIS]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         teamImmunity: 1,
       },
     },
-    [CHARLIE]: {
+    [AN]: {
       [RuleSet.STANDARD]: { survival: 1, teamImmunity: 1 },
     },
-    [CHRISSY]: {
+    [ANA]: {
       [RuleSet.STANDARD]: { survival: 1, teamImmunity: 1 },
     },
-    [CHRISTIAN]: {
+    [JELLY]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         idolFound: 2,
         votes: 1,
       },
     },
-    [CIRIE]: {
+    [BRADY]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 1,
       },
     },
-    [COACH]: {
+    [CARTER]: {
       [RuleSet.STANDARD]: {
         teamImmunity: 1,
         survival: 1,
       },
     },
-    [COLBY]: {
+    [CRISTIAN]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         teamImmunity: 1,
       },
     },
-    [DEE]: {
+    [KILBY]: {
       [RuleSet.STANDARD]: {
         teamImmunity: 1,
         survival: 1,
       },
     },
-    [EMILY]: {
+    [DEVIN]: {
       [RuleSet.STANDARD]: { survival: 1, votes: 1 },
     },
-    [GENEVIEVE]: {
+    [ERIC]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         teamImmunity: 1,
       },
     },
-    [JOE]: {
+    [KRISTIN]: {
       [RuleSet.STANDARD]: { survival: 1, votes: 1 },
     },
-    [JONATHAN]: {
+    [LEWIS]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         teamImmunity: 1,
       },
     },
-    [KAMILLA]: {
+    [LINNEA]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         teamImmunity: 1,
@@ -247,19 +247,19 @@ export const weeks: Array<Week> = [
         teamImmunity: 1,
       },
     },
-    [OZZY]: {
+    [ORI]: {
       [RuleSet.STANDARD]: { survival: 1, votes: 1 },
     },
-    [Q]: {
+    [PATT]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         teamImmunity: 1,
       },
     },
-    [RICK]: {
+    [ROB]: {
       [RuleSet.STANDARD]: { survival: 1, votes: 1 },
     },
-    [RIZO]: {
+    [SHARONDA]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         teamImmunity: 1,
@@ -284,74 +284,74 @@ export const weeks: Array<Week> = [
     },
   },
   {
-    eliminated: [Q],
-    [ANGELINA]: {
+    eliminated: [PATT],
+    [AALIYAH]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 1,
       },
     },
-    [AUBRY]: {
+    [ALEXIS]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         teamImmunity: 1,
       },
     },
-    [CHARLIE]: {
+    [AN]: {
       [RuleSet.STANDARD]: { survival: 1, teamImmunity: 1 },
     },
-    [CHRISSY]: {
+    [ANA]: {
       [RuleSet.STANDARD]: { survival: 1, teamImmunity: 1 },
     },
-    [CHRISTIAN]: {
+    [JELLY]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 1,
       },
     },
-    [CIRIE]: {
+    [BRADY]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         teamImmunity: 1,
       },
     },
-    [COACH]: {
+    [CARTER]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         teamImmunity: 1,
       },
     },
-    [COLBY]: {
+    [CRISTIAN]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         teamImmunity: 1,
       },
     },
-    [DEE]: {
+    [KILBY]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         teamImmunity: 1,
       },
     },
-    [EMILY]: {
+    [DEVIN]: {
       [RuleSet.STANDARD]: { survival: 1, votes: 1 },
     },
-    [GENEVIEVE]: {
+    [ERIC]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         teamImmunity: 1,
       },
     },
-    [JOE]: {
+    [KRISTIN]: {
       [RuleSet.STANDARD]: { survival: 1, teamImmunity: 1 },
     },
-    [JONATHAN]: {
+    [LEWIS]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         teamImmunity: 1,
       },
     },
-    [KAMILLA]: {
+    [LINNEA]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         teamImmunity: 1,
@@ -363,18 +363,18 @@ export const weeks: Array<Week> = [
         votes: 1,
       },
     },
-    [OZZY]: {
+    [ORI]: {
       [RuleSet.STANDARD]: { survival: 1, votes: 1 },
     },
-    [Q]: {
+    [PATT]: {
       [RuleSet.STANDARD]: {
         survival: 1,
       },
     },
-    [RICK]: {
+    [ROB]: {
       [RuleSet.STANDARD]: { survival: 1, teamImmunity: 1 },
     },
-    [RIZO]: {
+    [SHARONDA]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         teamImmunity: 1,
@@ -394,73 +394,73 @@ export const weeks: Array<Week> = [
   },
   {
     eliminated: [MIKE],
-    [ANGELINA]: {
+    [AALIYAH]: {
       [RuleSet.STANDARD]: {
         survival: 1,
       },
     },
-    [AUBRY]: {
+    [ALEXIS]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         teamImmunity: 1,
       },
     },
-    [CHARLIE]: {
+    [AN]: {
       [RuleSet.STANDARD]: { survival: 1, teamImmunity: 1 },
     },
-    [CHRISSY]: {
+    [ANA]: {
       [RuleSet.STANDARD]: { survival: 1, teamImmunity: 1 },
     },
-    [CHRISTIAN]: {
+    [JELLY]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 1,
       },
     },
-    [CIRIE]: {
+    [BRADY]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         teamImmunity: 1,
       },
     },
-    [COACH]: {
+    [CARTER]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         teamImmunity: 1,
       },
     },
-    [COLBY]: {
+    [CRISTIAN]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         teamImmunity: 1,
       },
     },
-    [DEE]: {
+    [KILBY]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         teamImmunity: 1,
       },
     },
-    [EMILY]: {
+    [DEVIN]: {
       [RuleSet.STANDARD]: { survival: 1, votes: 1 },
     },
-    [GENEVIEVE]: {
+    [ERIC]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         teamImmunity: 1,
         idolFound: 2,
       },
     },
-    [JOE]: {
+    [KRISTIN]: {
       [RuleSet.STANDARD]: { survival: 1, teamImmunity: 1 },
     },
-    [JONATHAN]: {
+    [LEWIS]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         teamImmunity: 1,
       },
     },
-    [KAMILLA]: {
+    [LINNEA]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         teamImmunity: 1,
@@ -471,13 +471,13 @@ export const weeks: Array<Week> = [
         survival: 1,
       },
     },
-    [OZZY]: {
+    [ORI]: {
       [RuleSet.STANDARD]: { survival: 1 },
     },
-    [RICK]: {
+    [ROB]: {
       [RuleSet.STANDARD]: { survival: 1, teamImmunity: 1 },
     },
-    [RIZO]: {
+    [SHARONDA]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         teamImmunity: 1,
@@ -497,84 +497,84 @@ export const weeks: Array<Week> = [
     },
   },
   {
-    eliminated: [ANGELINA, CHARLIE],
-    [ANGELINA]: {
+    eliminated: [AALIYAH, AN],
+    [AALIYAH]: {
       [RuleSet.STANDARD]: {
         survival: 1,
       },
     },
-    [AUBRY]: {
+    [ALEXIS]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         teamImmunity: 1,
       },
     },
-    [CHARLIE]: {
+    [AN]: {
       [RuleSet.STANDARD]: { survival: 1 },
     },
-    [CHRISSY]: {
+    [ANA]: {
       [RuleSet.STANDARD]: { survival: 1, teamImmunity: 1 },
     },
-    [CHRISTIAN]: {
+    [JELLY]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 1,
       },
     },
-    [CIRIE]: {
+    [BRADY]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 1,
       },
     },
-    [COACH]: {
+    [CARTER]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         teamImmunity: 1,
       },
     },
-    [COLBY]: {
+    [CRISTIAN]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         teamImmunity: 1,
       },
     },
-    [DEE]: {
+    [KILBY]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 1,
       },
     },
-    [EMILY]: {
+    [DEVIN]: {
       [RuleSet.STANDARD]: { survival: 1, votes: 1 },
     },
-    [GENEVIEVE]: {
+    [ERIC]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         teamImmunity: 1,
       },
     },
-    [JOE]: {
+    [KRISTIN]: {
       [RuleSet.STANDARD]: { survival: 1, teamImmunity: 1 },
     },
-    [JONATHAN]: {
+    [LEWIS]: {
       [RuleSet.STANDARD]: {
         survival: 1,
       },
     },
-    [KAMILLA]: {
+    [LINNEA]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 1,
       },
     },
-    [OZZY]: {
+    [ORI]: {
       [RuleSet.STANDARD]: { survival: 1, votes: 1 },
     },
-    [RICK]: {
+    [ROB]: {
       [RuleSet.STANDARD]: { survival: 1 },
     },
-    [RIZO]: {
+    [SHARONDA]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 1,
@@ -594,76 +594,76 @@ export const weeks: Array<Week> = [
     },
   },
   {
-    eliminated: [GENEVIEVE, KAMILLA, COLBY],
-    [AUBRY]: {
+    eliminated: [ERIC, LINNEA, CRISTIAN],
+    [ALEXIS]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 1,
       },
     },
-    [CHRISSY]: {
+    [ANA]: {
       [RuleSet.STANDARD]: { survival: 1, votes: 1 },
     },
-    [CHRISTIAN]: {
+    [JELLY]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         individualImmunity: 2,
         votes: 1,
       },
     },
-    [CIRIE]: {
+    [BRADY]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 1,
       },
     },
-    [COACH]: {
+    [CARTER]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 1,
       },
     },
-    [COLBY]: {
+    [CRISTIAN]: {
       [RuleSet.STANDARD]: {
         survival: 1,
       },
     },
-    [DEE]: {
+    [KILBY]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         individualImmunity: 2,
         votes: 1,
       },
     },
-    [EMILY]: {
+    [DEVIN]: {
       [RuleSet.STANDARD]: { survival: 1, votes: 1 },
     },
-    [GENEVIEVE]: {
+    [ERIC]: {
       [RuleSet.STANDARD]: {
         survival: 1,
       },
     },
-    [JOE]: {
+    [KRISTIN]: {
       [RuleSet.STANDARD]: { survival: 1, votes: 1 },
     },
-    [JONATHAN]: {
+    [LEWIS]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 1,
       },
     },
-    [KAMILLA]: {
+    [LINNEA]: {
       [RuleSet.STANDARD]: {
         survival: 1,
       },
     },
-    [OZZY]: {
+    [ORI]: {
       [RuleSet.STANDARD]: { survival: 1 },
     },
-    [RICK]: {
+    [ROB]: {
       [RuleSet.STANDARD]: { survival: 1, votes: 1 },
     },
-    [RIZO]: {
+    [SHARONDA]: {
       [RuleSet.STANDARD]: {
         survival: 1,
       },
@@ -682,58 +682,58 @@ export const weeks: Array<Week> = [
     },
   },
   {
-    jury: [DEE],
-    [AUBRY]: {
+    jury: [KILBY],
+    [ALEXIS]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 1,
       },
     },
-    [CHRISSY]: {
+    [ANA]: {
       [RuleSet.STANDARD]: { survival: 1, votes: 1 },
     },
-    [CHRISTIAN]: {
+    [JELLY]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 1,
       },
     },
-    [CIRIE]: {
+    [BRADY]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 1,
       },
     },
-    [COACH]: {
+    [CARTER]: {
       [RuleSet.STANDARD]: {
         survival: 1,
       },
     },
-    [DEE]: {
+    [KILBY]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         placement: 2,
       },
     },
-    [EMILY]: {
+    [DEVIN]: {
       [RuleSet.STANDARD]: { survival: 1, votes: 1 },
     },
-    [JOE]: {
+    [KRISTIN]: {
       [RuleSet.STANDARD]: { survival: 1 },
     },
-    [JONATHAN]: {
+    [LEWIS]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 1,
       },
     },
-    [OZZY]: {
+    [ORI]: {
       [RuleSet.STANDARD]: { survival: 1, individualImmunity: 2 },
     },
-    [RICK]: {
+    [ROB]: {
       [RuleSet.STANDARD]: { survival: 1, votes: 1 },
     },
-    [RIZO]: {
+    [SHARONDA]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 1,
@@ -752,52 +752,52 @@ export const weeks: Array<Week> = [
     },
   },
   {
-    jury: [COACH, CHRISSY],
-    [AUBRY]: {
+    jury: [CARTER, ANA],
+    [ALEXIS]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 1,
       },
     },
-    [CHRISSY]: {
+    [ANA]: {
       [RuleSet.STANDARD]: { survival: 1, placement: 2 },
     },
-    [CHRISTIAN]: {
+    [JELLY]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 1,
       },
     },
-    [CIRIE]: {
+    [BRADY]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 1,
       },
     },
-    [COACH]: {
+    [CARTER]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         placement: 2,
       },
     },
-    [EMILY]: {
+    [DEVIN]: {
       [RuleSet.STANDARD]: { survival: 1, votes: 1 },
     },
-    [JOE]: {
+    [KRISTIN]: {
       [RuleSet.STANDARD]: { survival: 1, votes: 1, individualImmunity: 2 },
     },
-    [JONATHAN]: {
+    [LEWIS]: {
       [RuleSet.STANDARD]: {
         survival: 1,
       },
     },
-    [OZZY]: {
+    [ORI]: {
       [RuleSet.STANDARD]: { survival: 1, votes: 1 },
     },
-    [RICK]: {
+    [ROB]: {
       [RuleSet.STANDARD]: { survival: 1, votes: 1 },
     },
-    [RIZO]: {
+    [SHARONDA]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 1,
@@ -818,44 +818,44 @@ export const weeks: Array<Week> = [
     },
   },
   {
-    jury: [CHRISTIAN],
-    [AUBRY]: {
+    jury: [JELLY],
+    [ALEXIS]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 1,
       },
     },
-    [CHRISTIAN]: {
+    [JELLY]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 1,
         placement: 2,
       },
     },
-    [CIRIE]: {
+    [BRADY]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 1,
       },
     },
-    [EMILY]: {
+    [DEVIN]: {
       [RuleSet.STANDARD]: { survival: 1 },
     },
-    [JOE]: {
+    [KRISTIN]: {
       [RuleSet.STANDARD]: { survival: 1, votes: 1, individualImmunity: 2 },
     },
-    [JONATHAN]: {
+    [LEWIS]: {
       [RuleSet.STANDARD]: {
         survival: 1,
       },
     },
-    [OZZY]: {
+    [ORI]: {
       [RuleSet.STANDARD]: { survival: 1 },
     },
-    [RICK]: {
+    [ROB]: {
       [RuleSet.STANDARD]: { survival: 1 },
     },
-    [RIZO]: {
+    [SHARONDA]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 1,
@@ -875,37 +875,37 @@ export const weeks: Array<Week> = [
   },
   {
     jury: [STEPHENIE],
-    [AUBRY]: {
+    [ALEXIS]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 1,
       },
     },
-    [CIRIE]: {
+    [BRADY]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 1,
       },
     },
-    [EMILY]: {
+    [DEVIN]: {
       [RuleSet.STANDARD]: { survival: 1, votes: 1 },
     },
-    [JOE]: {
+    [KRISTIN]: {
       [RuleSet.STANDARD]: { survival: 1, votes: 1 },
     },
-    [JONATHAN]: {
+    [LEWIS]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 1,
       },
     },
-    [OZZY]: {
+    [ORI]: {
       [RuleSet.STANDARD]: { survival: 1, votes: 1 },
     },
-    [RICK]: {
+    [ROB]: {
       [RuleSet.STANDARD]: { survival: 1, advantage: 1, idolFound: 2 },
     },
-    [RIZO]: {
+    [SHARONDA]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 1,
@@ -926,39 +926,39 @@ export const weeks: Array<Week> = [
     },
   },
   {
-    jury: [EMILY, OZZY],
-    [AUBRY]: {
+    jury: [DEVIN, ORI],
+    [ALEXIS]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 1,
       },
     },
-    [CIRIE]: {
+    [BRADY]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 2,
       },
     },
-    [EMILY]: {
+    [DEVIN]: {
       [RuleSet.STANDARD]: { survival: 1, placement: 2 },
     },
-    [JOE]: {
+    [KRISTIN]: {
       [RuleSet.STANDARD]: { survival: 1, votes: 1 },
     },
-    [JONATHAN]: {
+    [LEWIS]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 2,
         individualImmunity: 2,
       },
     },
-    [OZZY]: {
+    [ORI]: {
       [RuleSet.STANDARD]: { survival: 1, placement: 2 },
     },
-    [RICK]: {
+    [ROB]: {
       [RuleSet.STANDARD]: { survival: 1, voteNullified: 2 },
     },
-    [RIZO]: {
+    [SHARONDA]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 1,
@@ -972,33 +972,33 @@ export const weeks: Array<Week> = [
     },
   },
   {
-    jury: [CIRIE, RICK],
-    [AUBRY]: {
+    jury: [BRADY, ROB],
+    [ALEXIS]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 2,
       },
     },
-    [CIRIE]: {
+    [BRADY]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 1,
         placement: 2,
       },
     },
-    [JOE]: {
+    [KRISTIN]: {
       [RuleSet.STANDARD]: { survival: 1, votes: 2, individualImmunity: 2 },
     },
-    [JONATHAN]: {
+    [LEWIS]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 2,
       },
     },
-    [RICK]: {
+    [ROB]: {
       [RuleSet.STANDARD]: { survival: 1, placement: 2 },
     },
-    [RIZO]: {
+    [SHARONDA]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 2,
@@ -1013,9 +1013,9 @@ export const weeks: Array<Week> = [
     },
   },
   {
-    jury: [TIFFANY, RIZO],
-    eliminated: [JOE, JONATHAN],
-    [AUBRY]: {
+    jury: [TIFFANY, SHARONDA],
+    eliminated: [KRISTIN, LEWIS],
+    [ALEXIS]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         individualImmunity: 2,
@@ -1023,10 +1023,10 @@ export const weeks: Array<Week> = [
         placement: 10,
       },
     },
-    [JOE]: {
+    [KRISTIN]: {
       [RuleSet.STANDARD]: { survival: 1, votes: 1, placement: 7 },
     },
-    [JONATHAN]: {
+    [LEWIS]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         individualImmunity: 2,
@@ -1035,7 +1035,7 @@ export const weeks: Array<Week> = [
         placement: 8,
       },
     },
-    [RIZO]: {
+    [SHARONDA]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 1,

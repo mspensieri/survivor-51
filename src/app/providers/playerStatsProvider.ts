@@ -4,7 +4,7 @@ import { airDates, weeks } from "../data/weeks";
 export function computePlayerTotal(
   player: Player,
   weekNumber: number,
-  ruleSet: RuleSet
+  ruleSet: RuleSet,
 ) {
   let score = 0;
 
@@ -26,7 +26,7 @@ export function computePlayerTotal(
 export function computePlayerPoints(
   player: Player,
   weekNumber: number,
-  ruleSet: RuleSet
+  ruleSet: RuleSet,
 ) {
   const points: Record<string, number> = {};
 
@@ -49,11 +49,11 @@ export function computePlayerPoints(
 
 export function computePlayerStatus(
   player: Player,
-  weekNumber: number
+  weekNumber: number,
 ): PlayerStatus {
   const precedingWeeks = weeks.slice(0, weekNumber + 1);
   const eliminated = precedingWeeks.some((week) =>
-    week.eliminated?.includes(player.key)
+    week.eliminated?.includes(player.key),
   );
   const inJury = precedingWeeks.some((week) => week.jury?.includes(player.key));
 
