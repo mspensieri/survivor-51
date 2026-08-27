@@ -80,12 +80,6 @@ export const PLAYERS: Record<PlayerKeys, Player> = {
     tribe: CILA,
     history: "Seasons 1, 8",
   },
-  [PlayerKeys.SAVANNAH]: {
-    key: PlayerKeys.SAVANNAH,
-    name: "Savannah",
-    tribe: CILA,
-    history: "Season 49",
-  },
   [PlayerKeys.KRISTIN]: {
     key: PlayerKeys.KRISTIN,
     name: "Kristin",
@@ -133,18 +127,6 @@ export const PLAYERS: Record<PlayerKeys, Player> = {
     name: "Rob",
     tribe: CILA,
     history: "Season 38",
-  },
-  [PlayerKeys.STEPHENIE]: {
-    key: PlayerKeys.STEPHENIE,
-    name: "Stephenie",
-    tribe: VATU,
-    history: "Seasons 10, 11, 20",
-  },
-  [PlayerKeys.TIFFANY]: {
-    key: PlayerKeys.TIFFANY,
-    name: "Tiffany",
-    tribe: KALO,
-    history: "Season 46",
   },
 };
 

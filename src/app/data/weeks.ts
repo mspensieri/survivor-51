@@ -48,9 +48,6 @@ const {
   PATT,
   ROB,
   SHARONDA,
-  SAVANNAH,
-  STEPHENIE,
-  TIFFANY,
 } = PlayerKeys;
 
 export const weeks: Array<Week> = [
@@ -149,25 +146,9 @@ export const weeks: Array<Week> = [
         teamImmunity: 1,
       },
     },
-    [SAVANNAH]: {
-      [RuleSet.STANDARD]: {
-        votes: 1,
-        advantage: 1,
-      },
-    },
-    [STEPHENIE]: {
-      [RuleSet.STANDARD]: {
-        teamImmunity: 1,
-      },
-    },
-    [TIFFANY]: {
-      [RuleSet.STANDARD]: {
-        teamImmunity: 1,
-      },
-    },
   },
   {
-    eliminated: [SAVANNAH],
+    eliminated: [],
     [AALIYAH]: {
       [RuleSet.STANDARD]: {
         survival: 1,
@@ -260,23 +241,6 @@ export const weeks: Array<Week> = [
       [RuleSet.STANDARD]: { survival: 1, votes: 1 },
     },
     [SHARONDA]: {
-      [RuleSet.STANDARD]: {
-        survival: 1,
-        teamImmunity: 1,
-      },
-    },
-    [SAVANNAH]: {
-      [RuleSet.STANDARD]: {
-        survival: 1,
-      },
-    },
-    [STEPHENIE]: {
-      [RuleSet.STANDARD]: {
-        survival: 1,
-        teamImmunity: 1,
-      },
-    },
-    [TIFFANY]: {
       [RuleSet.STANDARD]: {
         survival: 1,
         teamImmunity: 1,
@@ -380,17 +344,6 @@ export const weeks: Array<Week> = [
         teamImmunity: 1,
       },
     },
-    [STEPHENIE]: {
-      [RuleSet.STANDARD]: {
-        survival: 1,
-      },
-    },
-    [TIFFANY]: {
-      [RuleSet.STANDARD]: {
-        survival: 1,
-        teamImmunity: 1,
-      },
-    },
   },
   {
     eliminated: [MIKE],
@@ -483,18 +436,6 @@ export const weeks: Array<Week> = [
         teamImmunity: 1,
       },
     },
-    [STEPHENIE]: {
-      [RuleSet.STANDARD]: {
-        survival: 1,
-        votes: 1,
-      },
-    },
-    [TIFFANY]: {
-      [RuleSet.STANDARD]: {
-        survival: 1,
-        teamImmunity: 1,
-      },
-    },
   },
   {
     eliminated: [AALIYAH, AN],
@@ -580,18 +521,6 @@ export const weeks: Array<Week> = [
         votes: 1,
       },
     },
-    [STEPHENIE]: {
-      [RuleSet.STANDARD]: {
-        survival: 1,
-        votes: 1,
-      },
-    },
-    [TIFFANY]: {
-      [RuleSet.STANDARD]: {
-        survival: 1,
-        teamImmunity: 1,
-      },
-    },
   },
   {
     eliminated: [ERIC, LINNEA, CRISTIAN],
@@ -668,18 +597,6 @@ export const weeks: Array<Week> = [
         survival: 1,
       },
     },
-    [STEPHENIE]: {
-      [RuleSet.STANDARD]: {
-        survival: 1,
-        individualImmunity: 2,
-        votes: 1,
-      },
-    },
-    [TIFFANY]: {
-      [RuleSet.STANDARD]: {
-        survival: 1,
-      },
-    },
   },
   {
     jury: [KILBY],
@@ -739,17 +656,6 @@ export const weeks: Array<Week> = [
         votes: 1,
       },
     },
-    [STEPHENIE]: {
-      [RuleSet.STANDARD]: {
-        survival: 1,
-        advantage: 1,
-      },
-    },
-    [TIFFANY]: {
-      [RuleSet.STANDARD]: {
-        survival: 1,
-      },
-    },
   },
   {
     jury: [CARTER, ANA],
@@ -803,19 +709,6 @@ export const weeks: Array<Week> = [
         votes: 1,
       },
     },
-    [STEPHENIE]: {
-      [RuleSet.STANDARD]: {
-        survival: 1,
-        votes: 1,
-      },
-    },
-    [TIFFANY]: {
-      [RuleSet.STANDARD]: {
-        survival: 1,
-        individualImmunity: 2,
-        votes: 1,
-      },
-    },
   },
   {
     jury: [JELLY],
@@ -861,20 +754,9 @@ export const weeks: Array<Week> = [
         votes: 1,
       },
     },
-    [STEPHENIE]: {
-      [RuleSet.STANDARD]: {
-        survival: 1,
-      },
-    },
-    [TIFFANY]: {
-      [RuleSet.STANDARD]: {
-        survival: 1,
-        votes: 1,
-      },
-    },
   },
   {
-    jury: [STEPHENIE],
+    jury: [],
     [ALEXIS]: {
       [RuleSet.STANDARD]: {
         survival: 1,
@@ -909,19 +791,6 @@ export const weeks: Array<Week> = [
       [RuleSet.STANDARD]: {
         survival: 1,
         votes: 1,
-      },
-    },
-    [STEPHENIE]: {
-      [RuleSet.STANDARD]: {
-        survival: 1,
-        placement: 2,
-      },
-    },
-    [TIFFANY]: {
-      [RuleSet.STANDARD]: {
-        survival: 1,
-        votes: 1,
-        individualImmunity: 2,
       },
     },
   },
@@ -964,12 +833,6 @@ export const weeks: Array<Week> = [
         votes: 1,
       },
     },
-    [TIFFANY]: {
-      [RuleSet.STANDARD]: {
-        survival: 1,
-        votes: 1,
-      },
-    },
   },
   {
     jury: [BRADY, ROB],
@@ -1004,16 +867,9 @@ export const weeks: Array<Week> = [
         votes: 2,
       },
     },
-    [TIFFANY]: {
-      [RuleSet.STANDARD]: {
-        survival: 1,
-        votes: 1,
-        individualImmunity: 2,
-      },
-    },
   },
   {
-    jury: [TIFFANY, SHARONDA],
+    jury: [SHARONDA],
     eliminated: [KRISTIN, LEWIS],
     [ALEXIS]: {
       [RuleSet.STANDARD]: {
@@ -1040,12 +896,6 @@ export const weeks: Array<Week> = [
         survival: 1,
         votes: 1,
         placement: 5,
-      },
-    },
-    [TIFFANY]: {
-      [RuleSet.STANDARD]: {
-        survival: 1,
-        placement: 3,
       },
     },
   },

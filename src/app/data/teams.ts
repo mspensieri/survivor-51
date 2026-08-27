@@ -16,7 +16,6 @@ const {
   ERIC,
   SHARONDA,
   JENNA,
-  SAVANNAH,
   KRISTIN,
   LEWIS,
   LINNEA,
@@ -24,8 +23,6 @@ const {
   MIKE,
   ORI,
   PATT,
-  STEPHENIE,
-  TIFFANY,
   ROB,
 } = PLAYERS;
 
@@ -37,7 +34,7 @@ export const teams: Array<Team> = computeHistory([
       ids: ["kara"],
     },
     name: "Uncle Jeff & The Numbers",
-    players: [ERIC, JELLY, BRADY, KILBY, LINNEA, MAGGIE, SHARONDA, STEPHENIE],
+    players: [ERIC, JELLY, BRADY, KILBY, LINNEA, MAGGIE, SHARONDA],
     winner: ERIC,
     swap: {
       playerIn: DEVIN,
@@ -65,18 +62,13 @@ export const teams: Array<Team> = computeHistory([
     name: "Come On In Guys",
     players: [AN, DEVIN, KILBY, LINNEA, JELLY, ERIC, ALEXIS, ROB],
     winner: AN,
-    swap: {
-      playerIn: TIFFANY,
-      playerOut: AN,
-      week: 5,
-    },
   },
   {
     captain: {
       ids: ["andrea_d", "susan"],
     },
     name: "The Dils",
-    players: [JELLY, BRADY, KRISTIN, ALEXIS, ERIC, AN, LINNEA, TIFFANY],
+    players: [JELLY, BRADY, KRISTIN, ALEXIS, ERIC, AN, LINNEA],
     winner: ERIC,
     swap: {
       playerIn: SHARONDA,
@@ -97,7 +89,7 @@ export const teams: Array<Team> = computeHistory([
       ids: ["elizabeth"],
     },
     name: "Play Your Idol",
-    players: [JENNA, JELLY, STEPHENIE, BRADY, DEVIN, TIFFANY, AN, ALEXIS],
+    players: [JENNA, JELLY, BRADY, DEVIN, AN, ALEXIS],
     winner: JENNA,
     swap: {
       playerIn: ERIC,
@@ -170,10 +162,10 @@ export const teams: Array<Team> = computeHistory([
       ids: ["stanley"],
     },
     name: "UNDERDOGS",
-    players: [CRISTIAN, AALIYAH, PATT, JENNA, CARTER, SAVANNAH, MIKE, MAGGIE],
+    players: [CRISTIAN, AALIYAH, PATT, JENNA, CARTER, MIKE, MAGGIE],
     winner: MIKE,
     swap: {
-      playerIn: TIFFANY,
+      playerIn: DEVIN,
       playerOut: JENNA,
       week: 1,
     },
@@ -183,7 +175,7 @@ export const teams: Array<Team> = computeHistory([
       ids: ["alex"],
     },
     name: "Wendy's Chickens",
-    players: [JELLY, DEVIN, TIFFANY, AN, AALIYAH, ERIC, SHARONDA, PATT],
+    players: [JELLY, DEVIN, AN, AALIYAH, ERIC, SHARONDA, PATT],
     winner: DEVIN,
     swap: {
       playerIn: ROB,
@@ -196,8 +188,8 @@ export const teams: Array<Team> = computeHistory([
       ids: ["sandy"],
     },
     name: "Sandy's Spynest",
-    players: [TIFFANY, ERIC, KRISTIN, LEWIS, PATT, BRADY, JENNA, SHARONDA],
-    winner: TIFFANY,
+    players: [ERIC, KRISTIN, LEWIS, PATT, BRADY, JENNA, SHARONDA],
+    winner: ERIC,
     swap: {
       playerIn: LINNEA,
       playerOut: JENNA,
@@ -212,7 +204,7 @@ export const teams: Array<Team> = computeHistory([
     players: [AN, SHARONDA, CARTER, AALIYAH, KRISTIN, DEVIN, ROB, MAGGIE],
     winner: KRISTIN,
     swap: {
-      playerIn: TIFFANY,
+      playerIn: DEVIN,
       playerOut: MAGGIE,
       week: 1,
     },
@@ -222,7 +214,7 @@ export const teams: Array<Team> = computeHistory([
       ids: ["brendan"],
     },
     name: "KING OF THE JUNGLE",
-    players: [TIFFANY, ERIC, KRISTIN, LEWIS, JELLY, SHARONDA, ANA, CARTER],
+    players: [ERIC, KRISTIN, LEWIS, JELLY, SHARONDA, ANA, CARTER],
     winner: KRISTIN,
   },
   {
@@ -230,11 +222,11 @@ export const teams: Array<Team> = computeHistory([
       ids: ["kevin"],
     },
     name: "Survivor 50: Dimples at War",
-    players: [ROB, SHARONDA, LINNEA, ERIC, AN, JELLY, MIKE, SAVANNAH],
+    players: [ROB, SHARONDA, LINNEA, ERIC, AN, JELLY, MIKE],
     winner: ROB,
     swap: {
       playerIn: CRISTIAN,
-      playerOut: SAVANNAH,
+      playerOut: MIKE,
       week: 2,
     },
   },
@@ -256,7 +248,7 @@ export const teams: Array<Team> = computeHistory([
       ids: ["sean"],
     },
     name: "Leafs Nation",
-    players: [JENNA, STEPHENIE, JELLY, AN, SHARONDA, SAVANNAH, KILBY, MIKE],
+    players: [JENNA, JELLY, AN, SHARONDA, KILBY, MIKE],
     winner: SHARONDA,
     swap: {
       playerIn: ROB,
@@ -269,7 +261,7 @@ export const teams: Array<Team> = computeHistory([
       ids: ["sarah"],
     },
     name: "Sole Survivor of Sass",
-    players: [ANA, STEPHENIE, ALEXIS, BRADY, KRISTIN, LEWIS, SHARONDA, JELLY],
+    players: [ANA, ALEXIS, BRADY, KRISTIN, LEWIS, SHARONDA, JELLY],
     winner: ALEXIS,
   },
   {
@@ -277,11 +269,11 @@ export const teams: Array<Team> = computeHistory([
       ids: ["frank"],
     },
     name: "Muscle Mania - Smackdown",
-    players: [LEWIS, SAVANNAH, PATT, KILBY, KRISTIN, ROB, ORI, CRISTIAN],
+    players: [LEWIS, PATT, KILBY, KRISTIN, ROB, ORI, CRISTIAN],
     winner: LEWIS,
     swap: {
       playerIn: MIKE,
-      playerOut: SAVANNAH,
+      playerOut: PATT,
       week: 2,
     },
   },
@@ -290,7 +282,7 @@ export const teams: Array<Team> = computeHistory([
       ids: ["thomas", "ashley"],
     },
     name: "Chicken Dinner",
-    players: [CRISTIAN, STEPHENIE, CARTER, ALEXIS, ANA, MIKE, KILBY, SHARONDA],
+    players: [CRISTIAN, CARTER, ALEXIS, ANA, MIKE, KILBY, SHARONDA],
     winner: SHARONDA,
     swap: {
       playerIn: ERIC,
@@ -303,17 +295,8 @@ export const teams: Array<Team> = computeHistory([
       ids: ["erick"],
     },
     name: "Fight Milk",
-    players: [
-      SAVANNAH,
-      ERIC,
-      CRISTIAN,
-      KILBY,
-      KRISTIN,
-      LINNEA,
-      MAGGIE,
-      SHARONDA,
-    ],
-    winner: SAVANNAH,
+    players: [ERIC, CRISTIAN, KILBY, KRISTIN, LINNEA, MAGGIE, SHARONDA],
+    winner: LINNEA,
     swap: {
       playerIn: BRADY,
       playerOut: MAGGIE,
@@ -325,7 +308,7 @@ export const teams: Array<Team> = computeHistory([
       ids: ["andrea_r"],
     },
     name: "Here For Friendship",
-    players: [BRADY, MIKE, LINNEA, JELLY, PATT, JENNA, TIFFANY, ORI],
+    players: [BRADY, MIKE, LINNEA, JELLY, PATT, JENNA, ORI],
     winner: MIKE,
     swap: {
       playerIn: SHARONDA,
@@ -338,7 +321,7 @@ export const teams: Array<Team> = computeHistory([
       ids: ["menard"],
     },
     name: "You Go Girl",
-    players: [BRADY, KILBY, ALEXIS, DEVIN, AALIYAH, STEPHENIE, TIFFANY, ANA],
+    players: [BRADY, KILBY, ALEXIS, DEVIN, AALIYAH, ANA],
     winner: KILBY,
     swap: {
       playerIn: LINNEA,
@@ -351,7 +334,7 @@ export const teams: Array<Team> = computeHistory([
       ids: ["leigh"],
     },
     name: "Justice for Jesse!!!",
-    players: [AN, DEVIN, CRISTIAN, SHARONDA, ERIC, KILBY, LINNEA, SAVANNAH],
+    players: [AN, DEVIN, CRISTIAN, SHARONDA, ERIC, KILBY, LINNEA],
     winner: DEVIN,
     swap: {
       playerIn: ROB,
@@ -390,7 +373,7 @@ export const teams: Array<Team> = computeHistory([
       ids: ["jacob"],
     },
     name: "With You 100%",
-    players: [MAGGIE, AN, SAVANNAH, LEWIS, ALEXIS, STEPHENIE, SHARONDA, ERIC],
+    players: [MAGGIE, AN, LEWIS, ALEXIS, SHARONDA, ERIC],
     winner: AN,
     swap: {
       playerIn: MIKE,
@@ -403,7 +386,7 @@ export const teams: Array<Team> = computeHistory([
       ids: ["jacklyn"],
     },
     name: "and-i'm-pissed",
-    players: [ERIC, SAVANNAH, ORI, LINNEA, DEVIN, AN, ANA, LEWIS],
+    players: [ERIC, ORI, LINNEA, DEVIN, AN, ANA, LEWIS],
     winner: LINNEA,
     swap: {
       playerIn: KRISTIN,
@@ -416,7 +399,7 @@ export const teams: Array<Team> = computeHistory([
       ids: ["meagan"],
     },
     name: "Totally Oswald",
-    players: [TIFFANY, ERIC, DEVIN, ANA, AN, JELLY, SHARONDA, KRISTIN],
+    players: [ERIC, DEVIN, ANA, AN, JELLY, SHARONDA, KRISTIN],
     winner: AN,
     swap: {
       playerIn: LEWIS,
@@ -429,7 +412,7 @@ export const teams: Array<Team> = computeHistory([
       ids: ["taylor"],
     },
     name: "Clyde's Castaways",
-    players: [BRADY, JELLY, MIKE, ROB, KILBY, TIFFANY, PATT, LINNEA],
+    players: [BRADY, JELLY, MIKE, ROB, KILBY, PATT, LINNEA],
     winner: ROB,
     swap: {
       playerIn: AN,
@@ -442,7 +425,7 @@ export const teams: Array<Team> = computeHistory([
       ids: ["dan", "dana"],
     },
     name: "Ducky & Boinko Forever",
-    players: [LINNEA, TIFFANY, ORI, ROB, ERIC, STEPHENIE, SHARONDA, DEVIN],
+    players: [LINNEA, ORI, ROB, ERIC, SHARONDA, DEVIN],
     winner: LINNEA,
   },
   {
@@ -450,7 +433,7 @@ export const teams: Array<Team> = computeHistory([
       ids: ["dean"],
     },
     name: "daddw",
-    players: [CARTER, KRISTIN, CRISTIAN, STEPHENIE, AALIYAH, ANA, KILBY, DEVIN],
+    players: [CARTER, KRISTIN, CRISTIAN, AALIYAH, ANA, KILBY, DEVIN],
     winner: CARTER,
     swap: {
       playerIn: ORI,
@@ -463,7 +446,7 @@ export const teams: Array<Team> = computeHistory([
       ids: ["jeremy"],
     },
     name: "Jere-atrics",
-    players: [SHARONDA, ERIC, SAVANNAH, KILBY, AN, KRISTIN, JELLY, TIFFANY],
+    players: [SHARONDA, ERIC, KILBY, AN, KRISTIN, JELLY],
     winner: SHARONDA,
     swap: {
       playerIn: ROB,
@@ -476,7 +459,7 @@ export const teams: Array<Team> = computeHistory([
       ids: ["jessie"],
     },
     name: "Outwit, Outplay, Out-Rizz",
-    players: [SHARONDA, KRISTIN, BRADY, ALEXIS, STEPHENIE, ANA, LEWIS, TIFFANY],
+    players: [SHARONDA, KRISTIN, BRADY, ALEXIS, ANA, LEWIS],
     winner: SHARONDA,
   },
   {
@@ -484,20 +467,15 @@ export const teams: Array<Team> = computeHistory([
       ids: ["anne"],
     },
     name: "Challenge Beasts",
-    players: [ANA, JELLY, SAVANNAH, ROB, KILBY, AN, ERIC, KRISTIN],
+    players: [ANA, JELLY, ROB, KILBY, AN, ERIC, KRISTIN],
     winner: KRISTIN,
-    swap: {
-      playerIn: DEVIN,
-      playerOut: SAVANNAH,
-      week: 2,
-    },
   },
   {
     captain: {
       ids: ["kathy", "fergus"],
     },
     name: "Fergus' Fortunetelling",
-    players: [JENNA, STEPHENIE, ANA, ROB, KILBY, AN, MAGGIE, SHARONDA],
+    players: [JENNA, ANA, ROB, KILBY, AN, MAGGIE, SHARONDA],
     winner: ROB,
     swap: {
       playerIn: ERIC,
@@ -557,33 +535,23 @@ export const teams: Array<Team> = computeHistory([
       ids: ["roberto", "christina"],
     },
     name: "The Baras",
-    players: [BRADY, ANA, LINNEA, MIKE, KRISTIN, JELLY, AN, SAVANNAH],
+    players: [BRADY, ANA, LINNEA, MIKE, KRISTIN, JELLY, AN],
     winner: AN,
-    swap: {
-      playerIn: LEWIS,
-      playerOut: SAVANNAH,
-      week: 2,
-    },
   },
   {
     captain: {
       ids: ["rachel"],
     },
     name: "SURVIVOR 50 EXTRAVAGANZA",
-    players: [ORI, ANA, AN, LINNEA, KRISTIN, MAGGIE, SHARONDA, SAVANNAH],
+    players: [ORI, ANA, AN, LINNEA, KRISTIN, MAGGIE, SHARONDA],
     winner: ORI,
-    swap: {
-      playerIn: TIFFANY,
-      playerOut: AN,
-      week: 5,
-    },
   },
   {
     captain: {
       ids: ["savannah"],
     },
     name: "Hidden Immunity Stick",
-    players: [ALEXIS, BRADY, STEPHENIE, ROB, ANA, JELLY, DEVIN, AN],
+    players: [ALEXIS, BRADY, ROB, ANA, JELLY, DEVIN, AN],
     winner: ALEXIS,
     swap: {
       playerIn: KRISTIN,
@@ -596,7 +564,7 @@ export const teams: Array<Team> = computeHistory([
       ids: ["robbie"],
     },
     name: "Peff Jobst",
-    players: [BRADY, ORI, JELLY, CARTER, AN, STEPHENIE, ALEXIS, ANA],
+    players: [BRADY, ORI, JELLY, CARTER, AN, ALEXIS, ANA],
     winner: JELLY,
     swap: {
       playerIn: SHARONDA,
@@ -609,7 +577,7 @@ export const teams: Array<Team> = computeHistory([
       ids: ["carl"],
     },
     name: "MalnuTricia",
-    players: [AN, ERIC, STEPHENIE, PATT, ALEXIS, JELLY, DEVIN, ORI],
+    players: [AN, ERIC, PATT, ALEXIS, JELLY, DEVIN, ORI],
     winner: AN,
     swap: {
       playerIn: ROB,
@@ -638,7 +606,7 @@ export const fakeTeams: Array<Team> = [
       ids: ["alex"],
     },
     winner: AALIYAH,
-    players: [CARTER, CRISTIAN, KILBY, DEVIN, ERIC, SHARONDA, JENNA, SAVANNAH],
+    players: [CARTER, CRISTIAN, KILBY, DEVIN, ERIC, SHARONDA, JENNA],
     history: {
       overallRating: 1,
       placements: [],
@@ -650,7 +618,7 @@ export const fakeTeams: Array<Team> = [
       ids: ["alex"],
     },
     winner: AALIYAH,
-    players: [JENNA, SAVANNAH, KRISTIN, LEWIS, LINNEA, MAGGIE, ERIC, SHARONDA],
+    players: [JENNA, KRISTIN, LEWIS, LINNEA, MAGGIE, ERIC, SHARONDA],
     history: {
       overallRating: 1,
       placements: [],
@@ -662,7 +630,7 @@ export const fakeTeams: Array<Team> = [
       ids: ["alex"],
     },
     winner: AALIYAH,
-    players: [CRISTIAN, KILBY, DEVIN, ERIC, SHARONDA, JENNA, SAVANNAH, KRISTIN],
+    players: [CRISTIAN, KILBY, DEVIN, ERIC, SHARONDA, JENNA, KRISTIN],
     history: {
       overallRating: 1,
       placements: [],
@@ -698,7 +666,7 @@ export const fakeTeams: Array<Team> = [
       ids: ["alex"],
     },
     winner: AALIYAH,
-    players: [DEVIN, ERIC, SHARONDA, JENNA, SAVANNAH, KRISTIN, LEWIS, LINNEA],
+    players: [DEVIN, ERIC, SHARONDA, JENNA, KRISTIN, LEWIS, LINNEA],
     history: {
       overallRating: 1,
       placements: [],
@@ -734,7 +702,7 @@ export const fakeTeams: Array<Team> = [
       ids: ["alex"],
     },
     winner: AALIYAH,
-    players: [ERIC, SHARONDA, JENNA, SAVANNAH, KRISTIN, LEWIS, LINNEA, MAGGIE],
+    players: [ERIC, SHARONDA, JENNA, KRISTIN, LEWIS, LINNEA, MAGGIE],
     history: {
       overallRating: 1,
       placements: [],
@@ -758,7 +726,7 @@ export const fakeTeams: Array<Team> = [
       ids: ["alex"],
     },
     winner: AALIYAH,
-    players: [JELLY, BRADY, ERIC, SHARONDA, JENNA, SAVANNAH, KRISTIN, LEWIS],
+    players: [JELLY, BRADY, ERIC, SHARONDA, JENNA, KRISTIN, LEWIS],
     history: {
       overallRating: 1,
       placements: [],
@@ -782,7 +750,7 @@ export const fakeTeams: Array<Team> = [
       ids: ["alex"],
     },
     winner: AALIYAH,
-    players: [CRISTIAN, KILBY, ERIC, SHARONDA, JENNA, SAVANNAH, MAGGIE, BRADY],
+    players: [CRISTIAN, KILBY, ERIC, SHARONDA, JENNA, MAGGIE, BRADY],
     history: {
       overallRating: 1,
       placements: [],
@@ -806,7 +774,7 @@ export const fakeTeams: Array<Team> = [
       ids: ["alex"],
     },
     winner: AALIYAH,
-    players: [CARTER, CRISTIAN, KILBY, DEVIN, ERIC, SHARONDA, JENNA, SAVANNAH],
+    players: [CARTER, CRISTIAN, KILBY, DEVIN, ERIC, SHARONDA, JENNA],
     history: {
       overallRating: 1,
       placements: [],
@@ -818,7 +786,7 @@ export const fakeTeams: Array<Team> = [
       ids: ["alex"],
     },
     winner: AALIYAH,
-    players: [JENNA, SAVANNAH, KRISTIN, LEWIS, LINNEA, MAGGIE, ERIC, SHARONDA],
+    players: [JENNA, KRISTIN, LEWIS, LINNEA, MAGGIE, ERIC, SHARONDA],
     history: {
       overallRating: 1,
       placements: [],

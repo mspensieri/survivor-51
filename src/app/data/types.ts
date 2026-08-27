@@ -20,9 +20,6 @@ export enum PlayerKeys {
   PATT = "PATT",
   ROB = "ROB",
   SHARONDA = "SHARONDA",
-  SAVANNAH = "SAVANNAH",
-  STEPHENIE = "STEPHENIE",
-  TIFFANY = "TIFFANY",
 }
 
 export enum PlayerTribes {
