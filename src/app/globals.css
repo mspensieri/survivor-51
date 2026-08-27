@@ -1,5 +1,5 @@
 :root {
-  background-color: #230159;
+  background-color: #122b2d;
 
   --border-radius-standard: 5px;
   --border-radius-rounded: 12px;
@@ -10,7 +10,7 @@
   }
 
   .flip-card {
-    --background-color-primary: #230159;
+    --background-color-primary: #122b2d;
 
     &.upside-down {
       --background-color-primary: #1c1c1c;
@@ -23,7 +23,7 @@
     --text-color-primary: #faece5;
     --text-color-secondary: #b0aca2;
     --text-color-transparent: rgba(114, 111, 86, 0.814);
-    --background-color-primary: #230159;
+    --background-color-primary: #122b2d;
 
     --component-background-color-primary: #faece5;
     --component-background-color-secondary: #e5e0d2;
