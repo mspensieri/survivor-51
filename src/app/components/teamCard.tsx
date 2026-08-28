@@ -62,7 +62,7 @@ const styles: Record<string, React.CSSProperties> = {
     gridColumn: "span 4",
   },
   inactivePlayer: {
-    opacity: 0.2,
+    opacity: 0.1,
   },
 };
 
@@ -79,6 +79,26 @@ function UserIcon() {
         fillRule="evenodd"
         d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z"
         clipRule="evenodd"
+      />
+    </svg>
+  );
+}
+
+function SwapIcon() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="size-4"
+      viewBox="0 0 24 24"
+      fill="none"
+      style={{ display: "inline" }}
+    >
+      <path
+        d="M4.06189 13C4.02104 12.6724 4 12.3387 4 12C4 7.58172 7.58172 4 12 4C14.5006 4 16.7332 5.14727 18.2002 6.94416M19.9381 11C19.979 11.3276 20 11.6613 20 12C20 16.4183 16.4183 20 12 20C9.61061 20 7.46589 18.9525 6 17.2916M9 17H6V17.2916M18.2002 4V6.94416M18.2002 6.94416V6.99993L15.2002 7M6 20V17.2916"
+        stroke="#000000"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </svg>
   );
@@ -154,7 +174,7 @@ export default function TeamCard(props: {
     );
 
     return playerScore && !["eliminated", "jury"].includes(playerScore.status);
-  });
+  }).length;
 
   return (
     <div
@@ -178,16 +198,17 @@ export default function TeamCard(props: {
       <div style={styles.diff}>{getScoreDiff()}</div>
       <div style={styles.divider}></div>
       <div style={styles.playerCount}>
-        <UserIcon />x{activePlayers.length}
-        {swapAvailable && <> (+swap)</>}
-        {/* {activePlayers.map((_, i) => (
-                  <UserIcon key={i} />
-                ))}
-                {swapAvailable && (
-                  <span style={styles.inactivePlayer}>
-                    <UserIcon />
-                  </span>
-                )} */}
+        {new Array(activePlayers).fill(undefined).map((_, i) => (
+          <UserIcon key={i} />
+        ))}
+        {new Array(players.length - activePlayers)
+          .fill(undefined)
+          .map((_, i) => (
+            <span key={i} style={styles.inactivePlayer}>
+              <UserIcon />
+            </span>
+          ))}
+        {swapAvailable && <SwapIcon />}
       </div>
       <div style={styles.placementHistory}>
         <PlacementChart
