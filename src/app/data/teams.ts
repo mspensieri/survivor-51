@@ -30,560 +30,180 @@ export const SWAP_DEADLINE = 5;
 
 export const teams: Array<Team> = computeHistory([
   {
-    captain: {
-      ids: ["kara"],
-    },
-    name: "Uncle Jeff & The Numbers",
-    players: [ERIC, JELLY, BRADY, KILBY, LINNEA, MAGGIE, SHARONDA, ROB],
-    winner: ERIC,
-    swap: {
-      playerIn: DEVIN,
-      playerOut: MAGGIE,
-      week: 1,
-    },
-  },
-  {
-    captain: {
-      ids: ["joanne"],
-    },
-    name: "TEAM JO",
-    players: [LINNEA, ORI, JELLY, AN, JENNA, MAGGIE, KILBY, LEWIS],
-    winner: LINNEA,
-    swap: {
-      playerIn: ERIC,
-      playerOut: MAGGIE,
-      week: 1,
-    },
-  },
-  {
-    captain: {
-      ids: ["spen"],
-    },
-    name: "Come On In Guys",
-    players: [AN, DEVIN, KILBY, LINNEA, JELLY, ERIC, ALEXIS, ROB],
-    winner: AN,
-  },
-  {
-    captain: {
-      ids: ["andrea_d", "susan"],
-    },
-    name: "The Dils",
-    players: [JELLY, BRADY, KRISTIN, ALEXIS, ERIC, AN, LINNEA, MAGGIE],
-    winner: ERIC,
-    swap: {
-      playerIn: SHARONDA,
-      playerOut: AN,
-      week: 5,
-    },
-  },
-  {
-    captain: {
-      ids: ["diego"],
-    },
-    name: "Operation Italy",
-    players: [ORI, ROB, JELLY, CARTER, ANA, LINNEA, LEWIS, ERIC],
-    winner: ERIC,
-  },
-  {
-    captain: {
-      ids: ["elizabeth"],
-    },
-    name: "Play Your Idol",
-    players: [JENNA, JELLY, BRADY, DEVIN, AN, ALEXIS, MAGGIE, LEWIS],
-    winner: JENNA,
-    swap: {
-      playerIn: ERIC,
-      playerOut: JENNA,
-      week: 2,
-    },
-  },
-  {
-    captain: {
-      ids: ["mikey"],
-    },
-    name: "Fiftieth Time in Fiji",
-    players: [KILBY, AALIYAH, BRADY, SHARONDA, MIKE, ROB, AN, ANA],
-    winner: SHARONDA,
-    swap: {
-      playerIn: CRISTIAN,
-      playerOut: MIKE,
-      week: 4,
-    },
-  },
-  {
-    captain: {
-      ids: ["alec"],
-    },
-    name: "The Ghost of Andy",
-    players: [ANA, ORI, LEWIS, ALEXIS, BRADY, KILBY, DEVIN, JELLY],
-    winner: KILBY,
-  },
-  {
-    captain: {
-      ids: ["leila"],
-    },
-    name: "Got Nothin' For Ya",
-    players: [SHARONDA, MIKE, ORI, LINNEA, BRADY, CARTER, MAGGIE, ROB],
-    winner: ORI,
-    swap: {
-      playerIn: KILBY,
-      playerOut: MAGGIE,
-      week: 5,
-    },
-  },
-  {
-    captain: {
-      ids: ["katie"],
-    },
-    name: "Truth Kamikazee",
-    players: [LINNEA, ERIC, AN, CARTER, ROB, LEWIS, ANA, SHARONDA],
-    winner: ROB,
-    swap: {
-      playerIn: BRADY,
-      playerOut: AN,
-      week: 5,
-    },
-  },
-  {
-    captain: {
-      ids: ["danny"],
-    },
-    name: "chud",
-    players: [LINNEA, ERIC, AN, BRADY, LEWIS, KRISTIN, DEVIN, ALEXIS],
-    winner: ALEXIS,
-    swap: {
-      playerIn: JELLY,
-      playerOut: AN,
-      week: 5,
-    },
-  },
-  {
-    captain: {
-      ids: ["stanley"],
-    },
-    name: "UNDERDOGS",
-    players: [CRISTIAN, AALIYAH, PATT, JENNA, CARTER, MIKE, MAGGIE, ROB],
-    winner: MIKE,
-    swap: {
-      playerIn: DEVIN,
-      playerOut: JENNA,
-      week: 1,
-    },
-  },
-  {
+    name: "Wendy's Chickens",
     captain: {
       ids: ["alex"],
     },
-    name: "Wendy's Chickens",
-    players: [JELLY, DEVIN, AN, AALIYAH, ERIC, SHARONDA, PATT, MAGGIE],
-    winner: DEVIN,
-    swap: {
-      playerIn: ROB,
-      playerOut: AN,
-      week: 5,
-    },
+    winner: CRISTIAN,
+    players: [ANA, CARTER, CRISTIAN, KILBY, JELLY, ORI],
   },
   {
-    captain: {
-      ids: ["sandy"],
-    },
-    name: "Sandy's Spynest",
-    players: [ERIC, KRISTIN, LEWIS, PATT, BRADY, JENNA, SHARONDA, MAGGIE],
-    winner: ERIC,
-    swap: {
-      playerIn: LINNEA,
-      playerOut: JENNA,
-      week: 5,
-    },
-  },
-  {
-    captain: {
-      ids: ["colleen"],
-    },
-    name: "Put me in, CARTER",
-    players: [AN, SHARONDA, CARTER, AALIYAH, KRISTIN, DEVIN, ROB, MAGGIE],
-    winner: KRISTIN,
-    swap: {
-      playerIn: DEVIN,
-      playerOut: MAGGIE,
-      week: 1,
-    },
-  },
-  {
-    captain: {
-      ids: ["brendan"],
-    },
-    name: "KING OF THE JUNGLE",
-    players: [ERIC, KRISTIN, LEWIS, JELLY, SHARONDA, ANA, CARTER, MAGGIE],
-    winner: KRISTIN,
-  },
-  {
-    captain: {
-      ids: ["kevin"],
-    },
-    name: "Survivor 50: Dimples at War",
-    players: [ROB, SHARONDA, LINNEA, ERIC, AN, JELLY, MIKE, MAGGIE],
-    winner: ROB,
-    swap: {
-      playerIn: CRISTIAN,
-      playerOut: MIKE,
-      week: 2,
-    },
-  },
-  {
+    name: "4blackcats",
     captain: {
       ids: ["carrie"],
     },
-    name: "4blackcats",
-    players: [KILBY, ERIC, LINNEA, MAGGIE, LEWIS, SHARONDA, AN, ANA],
-    winner: KILBY,
-    swap: {
-      playerIn: JELLY,
-      playerOut: MAGGIE,
-      week: 1,
-    },
-  },
-  {
-    captain: {
-      ids: ["sean"],
-    },
-    name: "Leafs Nation",
-    players: [JENNA, JELLY, AN, SHARONDA, KILBY, MIKE, LEWIS, ERIC],
-    winner: SHARONDA,
-    swap: {
-      playerIn: ROB,
-      playerOut: JENNA,
-      week: 1,
-    },
-  },
-  {
-    captain: {
-      ids: ["sarah"],
-    },
-    name: "Sole Survivor of Sass",
-    players: [ANA, ALEXIS, BRADY, KRISTIN, LEWIS, SHARONDA, JELLY, MAGGIE],
-    winner: ALEXIS,
-  },
-  {
-    captain: {
-      ids: ["frank"],
-    },
-    name: "Muscle Mania - Smackdown",
-    players: [LEWIS, PATT, KILBY, KRISTIN, ROB, ORI, CRISTIAN, ALEXIS],
-    winner: LEWIS,
-    swap: {
-      playerIn: MIKE,
-      playerOut: PATT,
-      week: 2,
-    },
-  },
-  {
-    captain: {
-      ids: ["thomas", "ashley"],
-    },
-    name: "Chicken Dinner",
-    players: [CRISTIAN, CARTER, ALEXIS, ANA, MIKE, KILBY, SHARONDA, ERIC],
-    winner: SHARONDA,
-    swap: {
-      playerIn: ERIC,
-      playerOut: MIKE,
-      week: 4,
-    },
-  },
-  {
-    captain: {
-      ids: ["erick"],
-    },
-    name: "Fight Milk",
-    players: [ERIC, CRISTIAN, KILBY, KRISTIN, LINNEA, MAGGIE, SHARONDA, ROB],
     winner: LINNEA,
-    swap: {
-      playerIn: BRADY,
-      playerOut: MAGGIE,
-      week: 1,
-    },
+    players: [ALEXIS, LEWIS, LINNEA, MIKE, PATT, ORI],
   },
   {
-    captain: {
-      ids: ["andrea_r"],
-    },
-    name: "Here For Friendship",
-    players: [BRADY, MIKE, LINNEA, JELLY, PATT, JENNA, ORI, SHARONDA],
-    winner: MIKE,
-    swap: {
-      playerIn: SHARONDA,
-      playerOut: JENNA,
-      week: 1,
-    },
-  },
-  {
-    captain: {
-      ids: ["menard"],
-    },
-    name: "You Go Girl",
-    players: [BRADY, KILBY, ALEXIS, DEVIN, AALIYAH, ANA, MAGGIE, JELLY],
-    winner: KILBY,
-    swap: {
-      playerIn: LINNEA,
-      playerOut: AALIYAH,
-      week: 5,
-    },
-  },
-  {
-    captain: {
-      ids: ["leigh"],
-    },
-    name: "Justice for Jesse!!!",
-    players: [AN, DEVIN, CRISTIAN, SHARONDA, ERIC, KILBY, LINNEA, MAGGIE],
-    winner: DEVIN,
-    swap: {
-      playerIn: ROB,
-      playerOut: AN,
-      week: 5,
-    },
-  },
-  {
-    captain: {
-      ids: ["elana"],
-    },
-    name: "Probst Malone",
-    players: [JELLY, AALIYAH, LINNEA, ANA, BRADY, MAGGIE, KRISTIN, JENNA],
-    winner: AALIYAH,
-    swap: {
-      playerIn: DEVIN,
-      playerOut: AALIYAH,
-      week: 5,
-    },
-  },
-  {
-    captain: {
-      ids: ["greg"],
-    },
-    name: "Kookoo 4 Kokoda",
-    players: [AN, LINNEA, KILBY, MAGGIE, SHARONDA, ALEXIS, ERIC, ROB],
-    winner: ROB,
-    swap: {
-      playerIn: LEWIS,
-      playerOut: MAGGIE,
-      week: 1,
-    },
-  },
-  {
-    captain: {
-      ids: ["jacob"],
-    },
-    name: "With You 100%",
-    players: [MAGGIE, AN, LEWIS, ALEXIS, SHARONDA, ERIC, JELLY, ROB],
-    winner: AN,
-    swap: {
-      playerIn: MIKE,
-      playerOut: MAGGIE,
-      week: 1,
-    },
-  },
-  {
-    captain: {
-      ids: ["jacklyn"],
-    },
-    name: "and-i'm-pissed",
-    players: [ERIC, ORI, LINNEA, DEVIN, AN, ANA, LEWIS, MAGGIE],
-    winner: LINNEA,
-    swap: {
-      playerIn: KRISTIN,
-      playerOut: AN,
-      week: 5,
-    },
-  },
-  {
-    captain: {
-      ids: ["meagan"],
-    },
-    name: "Totally Oswald",
-    players: [ERIC, DEVIN, ANA, AN, JELLY, SHARONDA, KRISTIN, MAGGIE],
-    winner: AN,
-    swap: {
-      playerIn: LEWIS,
-      playerOut: AN,
-      week: 5,
-    },
-  },
-  {
-    captain: {
-      ids: ["taylor"],
-    },
-    name: "Clyde's Castaways",
-    players: [BRADY, JELLY, MIKE, ROB, KILBY, PATT, LINNEA, MAGGIE],
-    winner: ROB,
-    swap: {
-      playerIn: AN,
-      playerOut: PATT,
-      week: 3,
-    },
-  },
-  {
-    captain: {
-      ids: ["dan", "dana"],
-    },
-    name: "Ducky & Boinko Forever",
-    players: [LINNEA, ORI, ROB, ERIC, SHARONDA, DEVIN, MAGGIE, ALEXIS],
-    winner: LINNEA,
-  },
-  {
-    captain: {
-      ids: ["dean"],
-    },
-    name: "daddw",
-    players: [CARTER, KRISTIN, CRISTIAN, AALIYAH, ANA, KILBY, DEVIN, MAGGIE],
-    winner: CARTER,
-    swap: {
-      playerIn: ORI,
-      playerOut: AALIYAH,
-      week: 5,
-    },
-  },
-  {
-    captain: {
-      ids: ["jeremy"],
-    },
-    name: "Jere-atrics",
-    players: [SHARONDA, ERIC, KILBY, AN, KRISTIN, JELLY, MAGGIE, ALEXIS],
-    winner: SHARONDA,
-    swap: {
-      playerIn: ROB,
-      playerOut: AN,
-      week: 5,
-    },
-  },
-  {
-    captain: {
-      ids: ["jessie"],
-    },
-    name: "Outwit, Outplay, Out-Rizz",
-    players: [SHARONDA, KRISTIN, BRADY, ALEXIS, ANA, LEWIS, JELLY, MAGGIE],
-    winner: SHARONDA,
-  },
-  {
-    captain: {
-      ids: ["anne"],
-    },
-    name: "Challenge Beasts",
-    players: [ANA, JELLY, ROB, KILBY, AN, ERIC, KRISTIN, MAGGIE],
-    winner: KRISTIN,
-  },
-  {
-    captain: {
-      ids: ["kathy", "fergus"],
-    },
-    name: "Fergus' Fortunetelling",
-    players: [JENNA, ANA, ROB, KILBY, AN, MAGGIE, SHARONDA, ALEXIS],
-    winner: ROB,
-    swap: {
-      playerIn: ERIC,
-      playerOut: JENNA,
-      week: 2,
-    },
-  },
-  {
-    captain: {
-      ids: ["christine", "jocelyn"],
-    },
-    name: "Banana Etiquette",
-    players: [ALEXIS, ERIC, JELLY, DEVIN, KRISTIN, LEWIS, CARTER, KILBY],
-    winner: ALEXIS,
-  },
-  {
-    captain: {
-      ids: ["jensen"],
-    },
-    name: "Reba Theme Song",
-    players: [ORI, PATT, ROB, KILBY, MIKE, ANA, BRADY, SHARONDA],
-    winner: ANA,
-    swap: {
-      playerIn: JELLY,
-      playerOut: PATT,
-      week: 5,
-    },
-  },
-  {
-    captain: {
-      ids: ["brittany", "jesse"],
-    },
-    name: "BJ-ISLAND",
-    players: [KILBY, MIKE, ERIC, AN, ANA, LINNEA, LEWIS, BRADY],
-    winner: KILBY,
-    swap: {
-      playerIn: ORI,
-      playerOut: AN,
-      week: 5,
-    },
-  },
-  {
-    captain: {
-      ids: ["sheldon"],
-    },
-    name: "Jeff Probst For President",
-    players: [JENNA, ORI, ANA, ROB, SHARONDA, AN, ERIC, LINNEA],
-    winner: ERIC,
-    swap: {
-      playerIn: AALIYAH,
-      playerOut: JENNA,
-      week: 2,
-    },
-  },
-  {
-    captain: {
-      ids: ["roberto", "christina"],
-    },
-    name: "The Baras",
-    players: [BRADY, ANA, LINNEA, MIKE, KRISTIN, JELLY, AN, MAGGIE],
-    winner: AN,
-  },
-  {
+    name: "SURVIVOR EXTRAVAGANZA 51",
     captain: {
       ids: ["rachel"],
     },
-    name: "SURVIVOR 50 EXTRAVAGANZA",
-    players: [ORI, ANA, AN, LINNEA, KRISTIN, MAGGIE, SHARONDA, ROB],
-    winner: ORI,
+    winner: KILBY,
+    players: [AALIYAH, BRADY, KILBY, KRISTIN, LINNEA, ORI],
   },
   {
+    name: "Shelderadooo",
     captain: {
-      ids: ["savannah"],
+      ids: ["sheldon"],
     },
-    name: "Hidden Immunity Stick",
-    players: [ALEXIS, BRADY, ROB, ANA, JELLY, DEVIN, AN, MAGGIE],
-    winner: ALEXIS,
-    swap: {
-      playerIn: KRISTIN,
-      playerOut: AN,
-      week: 5,
-    },
+    winner: SHARONDA,
+    players: [BRADY, CARTER, JELLY, JENNA, KILBY, SHARONDA],
   },
   {
+    name: "Wilson",
     captain: {
-      ids: ["robbie"],
+      ids: ["emmanuel"],
     },
-    name: "Peff Jobst",
-    players: [BRADY, ORI, JELLY, CARTER, AN, ALEXIS, ANA, MAGGIE],
     winner: JELLY,
-    swap: {
-      playerIn: SHARONDA,
-      playerOut: AN,
-      week: 5,
-    },
+    players: [ALEXIS, BRADY, CARTER, CRISTIAN, JELLY, PATT],
   },
   {
+    name: "Blindside Baddies",
     captain: {
-      ids: ["carl"],
+      ids: ["sophie"],
     },
-    name: "MalnuTricia",
-    players: [AN, ERIC, PATT, ALEXIS, JELLY, DEVIN, ORI, MAGGIE],
-    winner: AN,
-    swap: {
-      playerIn: ROB,
-      playerOut: AN,
-      week: 5,
+    winner: SHARONDA,
+    players: [ANA, CARTER, CRISTIAN, JELLY, ROB, SHARONDA],
+  },
+  {
+    name: "Jeff's Dimples",
+    captain: {
+      ids: ["kevin"],
     },
+    winner: PATT,
+    players: [JELLY, LEWIS, LINNEA, MIKE, PATT, ORI],
+  },
+  {
+    name: "Come on in, GIRLS",
+    captain: {
+      ids: ["kara"],
+    },
+    winner: ALEXIS,
+    players: [AALIYAH, ALEXIS, JELLY, KRISTIN, LINNEA, MAGGIE],
+  },
+  {
+    name: "Fight Milk",
+    captain: {
+      ids: ["erick"],
+    },
+    winner: CARTER,
+    players: [CARTER, LINNEA, SHARONDA, ALEXIS, PATT, MIKE],
+  },
+  {
+    name: "Please Do Well",
+    captain: {
+      ids: ["mikey"],
+    },
+    winner: ALEXIS,
+    players: [ALEXIS, CARTER, ANA, ERIC, ORI, PATT],
+  },
+  {
+    name: "Come on in Guys",
+    captain: {
+      ids: ["spen"],
+    },
+    winner: LINNEA,
+    players: [JENNA, LINNEA, AN, SHARONDA, MIKE, ORI],
+  },
+  {
+    name: "Play Your Billie Eilish Boomerang Idol",
+    captain: {
+      ids: ["elizabeth"],
+    },
+    winner: SHARONDA,
+    players: [ORI, AN, SHARONDA, LINNEA, ERIC, PATT],
+  },
+  {
+    name: "Banana Etiquette",
+    captain: {
+      ids: ["christine", "jocelyn"],
+    },
+    winner: JELLY,
+    players: [AN, JELLY, KILBY, ERIC, JENNA, ORI],
+  },
+  {
+    name: "Outwit, Outplay, Out-Rizz",
+    captain: {
+      ids: ["jessie"],
+    },
+    winner: CARTER,
+    players: [AALIYAH, BRADY, CARTER, DEVIN, JENNA, LINNEA],
+  },
+  {
+    name: "Fergus' Fortunetelling",
+    captain: {
+      ids: ["kathy", "fergus"],
+    },
+    winner: ORI,
+    players: [ALEXIS, JELLY, BRADY, KILBY, MIKE, ORI],
+  },
+  {
+    name: "Leafs Nation",
+    captain: {
+      ids: ["sean"],
+    },
+    winner: LEWIS,
+    players: [JENNA, LEWIS, LINNEA, ROB, AN, ALEXIS],
+  },
+  {
+    name: "Sole Survivor of Sass",
+    captain: {
+      ids: ["sarah"],
+    },
+    winner: ERIC,
+    players: [ERIC, LINNEA, CARTER, JENNA, ALEXIS, MIKE],
+  },
+  {
+    name: "Sandy's Spynest",
+    captain: {
+      ids: ["sandy"],
+    },
+    winner: SHARONDA,
+    players: [MIKE, ROB, SHARONDA, JELLY, ERIC, BRADY],
+  },
+  {
+    name: "Here for friendship",
+    captain: {
+      ids: ["andrea_r"],
+    },
+    winner: ALEXIS,
+    players: [BRADY, CARTER, ALEXIS, ANA, AALIYAH, CRISTIAN],
+  },
+  {
+    name: "chud",
+    captain: {
+      ids: ["danny"],
+    },
+    winner: ALEXIS,
+    players: [SHARONDA, LINNEA, ORI, MIKE, DEVIN, ALEXIS],
+  },
+  {
+    name: "Truth Kamikazee",
+    captain: {
+      ids: ["katie"],
+    },
+    winner: JELLY,
+    players: [MIKE, JELLY, ALEXIS, ERIC, DEVIN, BRADY],
+  },
+  {
+    name: "UNDERDOGS",
+    captain: {
+      ids: ["stanley"],
+    },
+    winner: JELLY,
+    players: [],
   },
 ]);
 
