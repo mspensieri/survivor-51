@@ -135,6 +135,45 @@ export default function MainView(props: {
     );
   }
 
+  function ViewWithTimeline({ children }: { children: React.ReactNode }) {
+    return isSmallScreen ? (
+      <div>
+        <WeekSelectorAccordion
+          selectedWeek={selectedWeek}
+          setSelectedWeek={onWeekSelected}
+          currentWeek={currentWeek}
+        ></WeekSelectorAccordion>
+        {children}
+      </div>
+    ) : (
+      <>
+        <Nav
+          variant="tabs"
+          activeKey={`${selectedWeek + 1}`}
+          onSelect={(k) => onWeekSelected(Number(k) - 1)}
+          className="mb-3"
+        >
+          {[...Array(airDates.length)].map((_, index) => {
+            const weekNumber = index;
+            const disabled = currentWeek < weekNumber + 1;
+            return (
+              <Nav.Item key={weekNumber}>
+                <Nav.Link
+                  eventKey={weekNumber + 1}
+                  title={airDates[weekNumber]}
+                  disabled={disabled}
+                >
+                  {airDates[weekNumber]}
+                </Nav.Link>
+              </Nav.Item>
+            );
+          })}
+        </Nav>
+        {children}
+      </>
+    );
+  }
+
   function generateLeaderboardForWeek(weekNumber: number) {
     if (!reveal && weekNumber === currentWeek - 1) {
       return (
@@ -212,82 +251,14 @@ export default function MainView(props: {
           style={{ paddingLeft: "15px" }}
         >
           <Tab eventKey="leaderboard" title="Leaderboard">
-            {isSmallScreen ? (
-              <div>
-                <WeekSelectorAccordion
-                  selectedWeek={selectedWeek}
-                  setSelectedWeek={onWeekSelected}
-                  currentWeek={currentWeek}
-                ></WeekSelectorAccordion>
+            <ViewWithTimeline>
                 {generateLeaderboardForWeek(selectedWeek)}
-              </div>
-            ) : (
-              <>
-                <Nav
-                  variant="tabs"
-                  activeKey={`${selectedWeek + 1}`}
-                  onSelect={(k) => onWeekSelected(Number(k) - 1)}
-                  id="week-selector-leaderboard"
-                  className="mb-3"
-                >
-                  {[...Array(airDates.length)].map((_, index) => {
-                    const weekNumber = index;
-                    const disabled = currentWeek < weekNumber + 1;
-                    return (
-                      <Nav.Item key={weekNumber}>
-                        <Nav.Link
-                          eventKey={weekNumber + 1}
-                          title={airDates[weekNumber]}
-                          disabled={disabled}
-                        >
-                          {airDates[weekNumber]}
-                        </Nav.Link>
-                      </Nav.Item>
-                    );
-                  })}
-                </Nav>
-                {generateLeaderboardForWeek(selectedWeek)}
-              </>
-            )}
+            </ViewWithTimeline>
           </Tab>
           <Tab eventKey="players" title="Players">
-            {isSmallScreen ? (
-              <div>
-                <WeekSelectorAccordion
-                  selectedWeek={selectedWeek}
-                  setSelectedWeek={onWeekSelected}
-                  currentWeek={currentWeek}
-                ></WeekSelectorAccordion>
+            <ViewWithTimeline>
                 {generatePlayerScoresForWeek(selectedWeek)}
-              </div>
-            ) : (
-              <>
-                <Nav
-                  variant="tabs"
-                  activeKey={`${selectedWeek + 1}`}
-                  onSelect={(k) => onWeekSelected(Number(k) - 1)}
-                  id="week-selector-players"
-                  className="mb-3"
-                >
-                  {[...Array(airDates.length)].map((_, index) => {
-                    const weekNumber = index;
-                    const disabled = currentWeek < weekNumber + 1;
-                    return (
-                      <Nav.Item key={weekNumber}>
-                        <Nav.Link
-                          eventKey={weekNumber + 1}
-                          title={airDates[weekNumber]}
-                          disabled={disabled}
-                        >
-                          {airDates[weekNumber]}
-                        </Nav.Link>
-                      </Nav.Item>
-                    );
-                  })}
-                </Nav>
-                {generatePlayerScoresForWeek(selectedWeek)}
-              </>
-            )}
+            </ViewWithTimeline>
           </Tab>
           <Tab eventKey="rules" title="Rules" className="rules">
             <Rules></Rules>
