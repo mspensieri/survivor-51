@@ -13,6 +13,18 @@ export function stars(rating: number) {
   return "★".repeat(rating) + "☆".repeat(5 - rating);
 }
 
+export const PointStringMap: Record<string, string> = {
+  survival: "Survived",
+  votes: "Correct votes",
+  teamImmunity: "Immunity (team)",
+  individualImmunity: "Immunity (indiv.)",
+  advantage: "Advantage",
+  idolFound: "Idol found",
+  voteNullified: "Votes nullified",
+  fire: "Fire",
+  placement: "Jury placement",
+};
+
 export function ratingDescription(rating: number) {
   switch (rating) {
     case 0:
