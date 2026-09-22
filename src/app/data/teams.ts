@@ -205,6 +205,70 @@ export const teams: Array<Team> = computeHistory([
     winner: JELLY,
     players: [],
   },
+  {
+    name: "Challenge Beasts",
+    captain: {
+      ids: ["anne"],
+    },
+    winner: BRADY,
+    players: [PATT, KILBY, BRADY, ALEXIS, LINNEA, ORI],
+  },
+  {
+    name: "Randoms",
+    captain: {
+      ids: ["menard"],
+    },
+    winner: JENNA,
+    players: [JENNA, DEVIN, PATT, ORI, JELLY, AN],
+  },
+  {
+    name: "Totally Oswald",
+    captain: {
+      ids: ["meagan"],
+    },
+    winner: SHARONDA,
+    players: [CARTER, JELLY, JENNA, SHARONDA, MIKE, ORI],
+  },
+  {
+    name: "Hidden Immunity Stick",
+    captain: {
+      ids: ["savannah"],
+    },
+    winner: ALEXIS,
+    players: [ALEXIS, JENNA, PATT, LEWIS, CARTER, ORI],
+  },
+  {
+    name: "Peff Jobst",
+    captain: {
+      ids: ["robbie"],
+    },
+    winner: JENNA,
+    players: [ALEXIS, KILBY, CARTER, ORI, JENNA, LINNEA],
+  },
+  {
+    name: "The Crossover",
+    captain: {
+      ids: ["leigh"],
+    },
+    winner: ALEXIS,
+    players: [JENNA, SHARONDA, ROB, ALEXIS, MIKE, CARTER],
+  },
+  {
+    name: "The Man, The Myth, The Legend, J-A-K-E, G-O-D.",
+    captain: {
+      ids: ["jacob"],
+    },
+    winner: PATT,
+    players: [PATT, LEWIS, LINNEA, ORI, JELLY, CARTER],
+  },
+  {
+    name: "Operation Italy",
+    captain: {
+      ids: ["diego"],
+    },
+    winner: LINNEA,
+    players: [PATT, LEWIS, BRADY, ANA, LINNEA, MIKE],
+  },
 ]);
 
 export const fakeTeams: Array<Team> = [
