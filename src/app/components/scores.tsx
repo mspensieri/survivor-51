@@ -6,7 +6,7 @@ import { PlayerRankings } from "../providers/types";
 import { Player, Team, PlayerTribes } from "../data/types";
 import { players } from "../data/players";
 import PlayerCard from "./playerCard";
-import { tribeColors } from "../utils/colors";
+// import { tribeColors } from "../utils/colors";
 import { PointStringMap } from "../utils/format";
 
 const styles: Record<string, React.CSSProperties> = {
@@ -65,7 +65,7 @@ export default function Scores(props: {
 
   return (
     <>
-      <h1>Original Tribes</h1>
+      {/* <h1>Original Tribes</h1>
       <div className="tribes-flex-container">
         {...Object.entries(tribeGroups).map(([tribe, tribePlayers], i) => (
           <div key={i} className="tribe-container">
@@ -106,7 +106,7 @@ export default function Scores(props: {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
 
       <h1>Players</h1>
       <div

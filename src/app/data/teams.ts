@@ -94,7 +94,7 @@ export const teams: Array<Team> = computeHistory([
     players: [AALIYAH, ALEXIS, JELLY, KRISTIN, LINNEA, MAGGIE],
   },
   {
-    name: "Fight Milk",
+    name: "Krull and the Gang",
     captain: {
       ids: ["erick"],
     },
@@ -202,8 +202,8 @@ export const teams: Array<Team> = computeHistory([
     captain: {
       ids: ["stanley"],
     },
-    winner: JELLY,
-    players: [],
+    winner: MAGGIE,
+    players: [MAGGIE, KRISTIN, CRISTIAN, AN, AALIYAH, ROB],
   },
   {
     name: "Challenge Beasts",
@@ -268,6 +268,78 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: LINNEA,
     players: [PATT, LEWIS, BRADY, ANA, LINNEA, MIKE],
+  },
+  {
+    name: "Joe's tall wife",
+    captain: {
+      ids: ["colleen"],
+    },
+    winner: BRADY,
+    players: [BRADY, ORI, ERIC, KRISTIN, JENNA, ALEXIS],
+  },
+  {
+    name: "NO SPOILERS",
+    captain: {
+      ids: ["brendan"],
+    },
+    winner: PATT,
+    players: [ALEXIS, ORI, PATT, JENNA, LINNEA, DEVIN],
+  },
+  {
+    name: "And-im-pissed",
+    captain: {
+      ids: ["jacklyn"],
+    },
+    winner: KILBY,
+    players: [KILBY, JENNA, ANA, LINNEA, ERIC, JELLY],
+  },
+  {
+    name: "Ducky and Boinko 4ever",
+    captain: {
+      ids: ["dana", "dan"],
+    },
+    winner: LINNEA,
+    players: [JELLY, DEVIN, KRISTIN, LEWIS, LINNEA, ORI],
+  },
+  {
+    name: "Kilby Your Enthusiasm",
+    captain: {
+      ids: ["frank"],
+    },
+    winner: KILBY,
+    players: [KILBY, AALIYAH, KRISTIN, ERIC, ROB, SHARONDA],
+  },
+  {
+    name: "Clyde's Castaways",
+    captain: {
+      ids: ["taylor"],
+    },
+    winner: ALEXIS,
+    players: [ALEXIS, BRADY, DEVIN, ERIC, JENNA, PATT],
+  },
+  {
+    name: "Jerry-attrics",
+    captain: {
+      ids: ["jeremy"],
+    },
+    winner: MIKE,
+    players: [DEVIN, SHARONDA, PATT, KILBY, CARTER, MIKE],
+  },
+  {
+    name: "DADDW",
+    captain: {
+      ids: ["dean"],
+    },
+    winner: ORI,
+    players: [ALEXIS, CARTER, DEVIN, ERIC, JENNA, ORI],
+  },
+  {
+    name: "The Dils",
+    captain: {
+      ids: ["andrea_d", "susan"],
+    },
+    winner: ANA,
+    players: [ANA, ORI, ROB, JENNA, LEWIS, DEVIN],
   },
 ]);
 
