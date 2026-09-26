@@ -27,7 +27,7 @@ const styles: Record<string, React.CSSProperties> = {
   spoilerContainer: {
     position: "absolute",
     textAlign: "center",
-    width: "400px",
+    maxWidth: "400px",
     height: "180px",
     padding: "20px",
     color: "var(--component-text-color-primary)",
@@ -252,12 +252,12 @@ export default function MainView(props: {
         >
           <Tab eventKey="leaderboard" title="Leaderboard">
             <ViewWithTimeline>
-                {generateLeaderboardForWeek(selectedWeek)}
+              {generateLeaderboardForWeek(selectedWeek)}
             </ViewWithTimeline>
           </Tab>
           <Tab eventKey="players" title="Players">
             <ViewWithTimeline>
-                {generatePlayerScoresForWeek(selectedWeek)}
+              {generatePlayerScoresForWeek(selectedWeek)}
             </ViewWithTimeline>
           </Tab>
           <Tab eventKey="rules" title="Rules" className="rules">
