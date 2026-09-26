@@ -23,9 +23,9 @@ export enum PlayerKeys {
 }
 
 export enum PlayerTribes {
-  VATU = "Vatu",
-  CILA = "Cila",
-  KALO = "Kalo",
+  TOKA = "Toka",
+  SAVU = "Savu",
+  EXILE = "Exile",
 }
 
 export const Captains = {

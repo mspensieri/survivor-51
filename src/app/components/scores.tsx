@@ -6,7 +6,7 @@ import { PlayerRankings } from "../providers/types";
 import { Player, Team, PlayerTribes } from "../data/types";
 import { players } from "../data/players";
 import PlayerCard from "./playerCard";
-// import { tribeColors } from "../utils/colors";
+import { tribeColors } from "../utils/colors";
 import { PointStringMap } from "../utils/format";
 
 const styles: Record<string, React.CSSProperties> = {
@@ -65,48 +65,57 @@ export default function Scores(props: {
 
   return (
     <>
-      {/* <h1>Original Tribes</h1>
+      <h1>Original Tribes</h1>
       <div className="tribes-flex-container">
-        {...Object.entries(tribeGroups).map(([tribe, tribePlayers], i) => (
-          <div key={i} className="tribe-container">
-            <div style={styles.tribeDetailsContainer}>
-              <div style={styles.tribeName}>{tribe}</div>
-              <div
-                style={{
-                  ...styles.tribeColorIndicator,
-                  backgroundColor: tribeColors[tribe as PlayerTribes],
-                }}
-              ></div>
-            </div>
-            <div className="tribe-members-flex-container">
-              {...tribePlayers.map((player) => {
-                const thisWeekScore = (thisWeekRankings || []).find(
-                  (p) => p.player === player,
-                );
+        {...Object.entries(tribeGroups)
+          .sort(([a], [b]) => {
+            if (a === PlayerTribes.SAVU) return -1;
+            if (b === PlayerTribes.TOKA) return -1;
+            return 0;
+          })
+          .map(([tribe, tribePlayers], i) => (
+            <div
+              key={i}
+              className={`tribe-container ${tribe === PlayerTribes.EXILE ? "exile" : ""}`}
+            >
+              <div style={styles.tribeDetailsContainer}>
+                <div style={styles.tribeName}>{tribe}</div>
+                <div
+                  style={{
+                    ...styles.tribeColorIndicator,
+                    backgroundColor: tribeColors[tribe as PlayerTribes],
+                  }}
+                ></div>
+              </div>
+              <div className="tribe-members-flex-container">
+                {...tribePlayers.map((player) => {
+                  const thisWeekScore = (thisWeekRankings || []).find(
+                    (p) => p.player === player,
+                  );
 
-                const isActive =
-                  thisWeekScore &&
-                  ["active", "winner"].includes(thisWeekScore.status);
+                  const isActive =
+                    thisWeekScore &&
+                    ["active", "winner"].includes(thisWeekScore.status);
 
-                return (
-                  <img
-                    key={player.key}
-                    src={
-                      hideSpoilers
-                        ? "mystery-man.png"
-                        : `${player.key.toLowerCase()}.jpg`
-                    }
-                    alt={player.name}
-                    width={72}
-                    height={72}
-                    className={isActive || hideSpoilers ? "" : "eliminated"}
-                  ></img>
-                );
-              })}
+                  return (
+                    <img
+                      key={player.key}
+                      src={
+                        hideSpoilers
+                          ? "mystery-man.png"
+                          : `${player.key.toLowerCase()}.jpg`
+                      }
+                      alt={player.name}
+                      width={72}
+                      height={72}
+                      className={isActive || hideSpoilers ? "" : "eliminated"}
+                    ></img>
+                  );
+                })}
+              </div>
             </div>
-          </div>
-        ))}
-      </div> */}
+          ))}
+      </div>
 
       <h1>Players</h1>
       <div

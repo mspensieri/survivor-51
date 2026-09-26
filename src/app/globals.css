@@ -325,7 +325,7 @@
   .tribe-members-flex-container {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     align-content: flex-start;
 
@@ -343,12 +343,16 @@
 
   .tribe-container {
     padding: 10px;
-    width: 340px; /* 4 tiles + gaps + border */
+    width: 422px; /* 5 tiles + gaps + border */
     height: auto;
     border-radius: var(--border-radius-standard);
     border: 1px solid var(--component-text-color-primary);
     color: var(--component-text-color-primary);
     background-color: var(--component-background-color-primary);
+
+    &.exile {
+      width: 103px; /* 1 tile + border */
+    }
   }
 
   .tribe-members-flex-container {

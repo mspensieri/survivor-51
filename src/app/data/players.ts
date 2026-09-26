@@ -1,111 +1,111 @@
 import { Player, PlayerKeys, PlayerTribes } from "./types";
-const { VATU, CILA, KALO } = PlayerTribes;
+const { TOKA, SAVU, EXILE } = PlayerTribes;
 
 export const PLAYERS: Record<PlayerKeys, Player> = {
   [PlayerKeys.AALIYAH]: {
     key: PlayerKeys.AALIYAH,
     name: "Aaliyah",
-    tribe: VATU,
+    tribe: TOKA,
   },
   [PlayerKeys.ALEXIS]: {
     key: PlayerKeys.ALEXIS,
     name: "Alexis",
-    tribe: VATU,
+    tribe: SAVU,
   },
   [PlayerKeys.AN]: {
     key: PlayerKeys.AN,
     name: "Thien An",
-    tribe: KALO,
+    tribe: TOKA,
   },
   [PlayerKeys.ANA]: {
     key: PlayerKeys.ANA,
     name: "Ana",
-    tribe: KALO,
+    tribe: SAVU,
   },
   [PlayerKeys.JELLY]: {
     key: PlayerKeys.JELLY,
     name: "Jelly",
-    tribe: CILA,
+    tribe: TOKA,
   },
   [PlayerKeys.BRADY]: {
     key: PlayerKeys.BRADY,
     name: "Brady",
-    tribe: CILA,
+    tribe: TOKA,
   },
   [PlayerKeys.CARTER]: {
     key: PlayerKeys.CARTER,
     name: "Carter",
-    tribe: KALO,
+    tribe: SAVU,
   },
   [PlayerKeys.CRISTIAN]: {
     key: PlayerKeys.CRISTIAN,
     name: "Cristian",
-    tribe: VATU,
+    tribe: SAVU,
   },
   [PlayerKeys.KILBY]: {
     key: PlayerKeys.KILBY,
     name: "Kilby",
-    tribe: KALO,
+    tribe: TOKA,
   },
   [PlayerKeys.DEVIN]: {
     key: PlayerKeys.DEVIN,
     name: "Devin",
-    tribe: CILA,
+    tribe: TOKA,
   },
   [PlayerKeys.ERIC]: {
     key: PlayerKeys.ERIC,
     name: "Eric",
-    tribe: VATU,
-  },
-  [PlayerKeys.SHARONDA]: {
-    key: PlayerKeys.SHARONDA,
-    name: "Sharonda",
-    tribe: VATU,
+    tribe: SAVU,
   },
   [PlayerKeys.JENNA]: {
     key: PlayerKeys.JENNA,
     name: "Jenna",
-    tribe: CILA,
+    tribe: TOKA,
   },
   [PlayerKeys.KRISTIN]: {
     key: PlayerKeys.KRISTIN,
     name: "Kristin",
-    tribe: CILA,
+    tribe: SAVU,
   },
   [PlayerKeys.LEWIS]: {
     key: PlayerKeys.LEWIS,
     name: "Lewis",
-    tribe: KALO,
+    tribe: EXILE,
   },
   [PlayerKeys.LINNEA]: {
     key: PlayerKeys.LINNEA,
     name: "Linnea",
-    tribe: KALO,
+    tribe: SAVU,
   },
   [PlayerKeys.MAGGIE]: {
     key: PlayerKeys.MAGGIE,
     name: "Maggie",
-    tribe: VATU,
+    tribe: TOKA,
   },
   [PlayerKeys.MIKE]: {
     key: PlayerKeys.MIKE,
     name: "Mike",
-    tribe: KALO,
+    tribe: TOKA,
   },
   [PlayerKeys.ORI]: {
     key: PlayerKeys.ORI,
     name: "Ori",
-    tribe: CILA,
+    tribe: SAVU,
   },
   [PlayerKeys.PATT]: {
     key: PlayerKeys.PATT,
     name: "Patt",
-    tribe: VATU,
+    tribe: TOKA,
   },
   [PlayerKeys.ROB]: {
     key: PlayerKeys.ROB,
     name: "Rob",
-    tribe: CILA,
+    tribe: SAVU,
+  },
+  [PlayerKeys.SHARONDA]: {
+    key: PlayerKeys.SHARONDA,
+    name: "Sharonda",
+    tribe: SAVU,
   },
 };
 
