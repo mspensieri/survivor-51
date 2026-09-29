@@ -31,14 +31,14 @@ const {
   ALEXIS,
   AN,
   ANA,
-  JELLY,
   BRADY,
   CARTER,
   CRISTIAN,
-  KILBY,
   DEVIN,
   ERIC,
+  JELLY,
   JENNA,
+  KILBY,
   KRISTIN,
   LEWIS,
   LINNEA,
@@ -50,4 +50,89 @@ const {
   SHARONDA,
 } = PlayerKeys;
 
-export const weeks: Array<Week> = [{}];
+export const weeks: Array<Week> = [
+  {
+    eliminated: [AALIYAH],
+    ALEXIS: {
+      [RuleSet.STANDARD]: {
+        teamImmunity: 1,
+      },
+    },
+    AN: {
+      [RuleSet.STANDARD]: {
+        votes: 1,
+      },
+    },
+    ANA: {
+      [RuleSet.STANDARD]: {
+        teamImmunity: 1,
+      },
+    },
+    BRADY: {
+      [RuleSet.STANDARD]: {
+        votes: 1,
+      },
+    },
+    CARTER: {
+      [RuleSet.STANDARD]: {
+        teamImmunity: 1,
+      },
+    },
+    CRISTIAN: {
+      [RuleSet.STANDARD]: {
+        teamImmunity: 1,
+      },
+    },
+    ERIC: {
+      [RuleSet.STANDARD]: {
+        teamImmunity: 1,
+      },
+    },
+    KILBY: {
+      [RuleSet.STANDARD]: {
+        votes: 1,
+      },
+    },
+    KRISTIN: {
+      [RuleSet.STANDARD]: {
+        teamImmunity: 1,
+      },
+    },
+    LINNEA: {
+      [RuleSet.STANDARD]: {
+        teamImmunity: 1,
+      },
+    },
+    MAGGIE: {
+      [RuleSet.STANDARD]: {
+        votes: 1,
+      },
+    },
+    MIKE: {
+      [RuleSet.STANDARD]: {
+        votes: 1,
+      },
+    },
+    ORI: {
+      [RuleSet.STANDARD]: {
+        teamImmunity: 1,
+      },
+    },
+    PATT: {
+      [RuleSet.STANDARD]: {
+        votes: 1,
+      },
+    },
+    ROB: {
+      [RuleSet.STANDARD]: {
+        teamImmunity: 1,
+        idolFound: 2,
+      },
+    },
+    SHARONDA: {
+      [RuleSet.STANDARD]: {
+        teamImmunity: 1,
+      },
+    },
+  },
+];
