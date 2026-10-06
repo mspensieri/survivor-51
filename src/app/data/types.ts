@@ -55,7 +55,7 @@ export const Captains = {
   elana: "Elana",
   elizabeth: "Elizabeth",
   emmanuel: "Emmanuel",
-  erick: "Erick",
+  erick: "Arick",
   fekre: "Fekre",
   fergus: "Fergus",
   frank: "Frank",

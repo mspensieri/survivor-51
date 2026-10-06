@@ -54,7 +54,7 @@ export const PLAYERS: Record<PlayerKeys, Player> = {
   },
   [PlayerKeys.ERIC]: {
     key: PlayerKeys.ERIC,
-    name: "Eric",
+    name: "Aric",
     tribe: SAVU,
   },
   [PlayerKeys.JENNA]: {

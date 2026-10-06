@@ -53,6 +53,7 @@ const {
 export const weeks: Array<Week> = [
   {
     eliminated: [AALIYAH],
+    jury: [],
     ALEXIS: {
       [RuleSet.STANDARD]: {
         teamImmunity: 1,
@@ -133,6 +134,70 @@ export const weeks: Array<Week> = [
       [RuleSet.STANDARD]: {
         teamImmunity: 1,
       },
+    },
+  },
+  {
+    eliminated: [ANA],
+    jury: [],
+    ALEXIS: {
+      [RuleSet.STANDARD]: { survival: 1, votes: 1 },
+    },
+    AN: {
+      [RuleSet.STANDARD]: { survival: 1, teamImmunity: 1 },
+    },
+    ANA: {
+      [RuleSet.STANDARD]: { survival: 1 },
+    },
+    BRADY: {
+      [RuleSet.STANDARD]: { survival: 1, teamImmunity: 1 },
+    },
+    CARTER: {
+      [RuleSet.STANDARD]: { survival: 1 },
+    },
+    CRISTIAN: {
+      [RuleSet.STANDARD]: { survival: 1, votes: 1 },
+    },
+    DEVIN: {
+      [RuleSet.STANDARD]: { survival: 1, teamImmunity: 1 },
+    },
+    ERIC: {
+      [RuleSet.STANDARD]: { survival: 1, votes: 1 },
+    },
+    JELLY: {
+      [RuleSet.STANDARD]: { survival: 1, teamImmunity: 1, idolFound: 2 },
+    },
+    JENNA: {
+      [RuleSet.STANDARD]: { survival: 1, teamImmunity: 1 },
+    },
+    KILBY: {
+      [RuleSet.STANDARD]: { survival: 1, teamImmunity: 1 },
+    },
+    KRISTIN: {
+      [RuleSet.STANDARD]: { survival: 1, votes: 1 },
+    },
+    LEWIS: {
+      [RuleSet.STANDARD]: { survival: 1, teamImmunity: 1 },
+    },
+    LINNEA: {
+      [RuleSet.STANDARD]: { survival: 1, votes: 1 },
+    },
+    MAGGIE: {
+      [RuleSet.STANDARD]: { survival: 1, teamImmunity: 1 },
+    },
+    MIKE: {
+      [RuleSet.STANDARD]: { survival: 1, teamImmunity: 1 },
+    },
+    ORI: {
+      [RuleSet.STANDARD]: { survival: 1 },
+    },
+    PATT: {
+      [RuleSet.STANDARD]: { survival: 1, teamImmunity: 1 },
+    },
+    ROB: {
+      [RuleSet.STANDARD]: { survival: 1 },
+    },
+    SHARONDA: {
+      [RuleSet.STANDARD]: { survival: 1, votes: 1 },
     },
   },
 ];

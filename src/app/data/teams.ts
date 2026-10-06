@@ -108,6 +108,11 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: ALEXIS,
     players: [ALEXIS, CARTER, ANA, ERIC, ORI, PATT],
+    swap: {
+      playerOut: ANA,
+      playerIn: CRISTIAN,
+      week: 2,
+    },
   },
   {
     name: "Come on in Guys",
@@ -140,6 +145,11 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: CARTER,
     players: [AALIYAH, BRADY, CARTER, DEVIN, JENNA, LINNEA],
+    swap: {
+      playerOut: AALIYAH,
+      playerIn: ANA,
+      week: 1,
+    },
   },
   {
     name: "Fergus' Fortunetelling",
@@ -340,6 +350,19 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: ANA,
     players: [ANA, ORI, ROB, JENNA, LEWIS, DEVIN],
+  },
+  {
+    name: "Chicken Dinner",
+    captain: {
+      ids: ["thomas", "ashley"],
+    },
+    winner: LEWIS,
+    players: [LEWIS, PATT, BRADY, LINNEA, JELLY, AALIYAH],
+    swap: {
+      playerIn: ALEXIS,
+      playerOut: AALIYAH,
+      week: 1,
+    },
   },
 ]);
 
