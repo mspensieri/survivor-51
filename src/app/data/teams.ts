@@ -214,6 +214,11 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: MAGGIE,
     players: [MAGGIE, KRISTIN, CRISTIAN, AN, AALIYAH, ROB],
+    swap: {
+      playerOut: AALIYAH,
+      playerIn: LEWIS,
+      week: 2,
+    },
   },
   {
     name: "Challenge Beasts",
