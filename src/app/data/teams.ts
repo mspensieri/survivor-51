@@ -283,6 +283,11 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: LINNEA,
     players: [PATT, LEWIS, BRADY, ANA, LINNEA, MIKE],
+    swap: {
+      playerOut: ANA,
+      playerIn: MAGGIE,
+      week: 2,
+    },
   },
   {
     name: "Joe's tall wife",
@@ -355,6 +360,11 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: ANA,
     players: [ANA, ORI, ROB, JENNA, LEWIS, DEVIN],
+    swap: {
+      playerOut: ANA,
+      playerIn: SHARONDA,
+      week: 2,
+    },
   },
   {
     name: "Chicken Dinner",
