@@ -52,6 +52,11 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: KILBY,
     players: [AALIYAH, BRADY, KILBY, KRISTIN, LINNEA, ORI],
+    swap: {
+      playerOut: AALIYAH,
+      playerIn: JELLY,
+      week: 3,
+    },
   },
   {
     name: "Shelderadooo",
@@ -60,6 +65,11 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: SHARONDA,
     players: [BRADY, CARTER, JELLY, JENNA, KILBY, SHARONDA],
+    swap: {
+      playerOut: JENNA,
+      playerIn: MAGGIE,
+      week: 3,
+    },
   },
   {
     name: "Wilson",
@@ -84,6 +94,11 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: PATT,
     players: [JELLY, LEWIS, LINNEA, MIKE, PATT, ORI],
+    swap: {
+      playerOut: PATT,
+      playerIn: KRISTIN,
+      week: 3,
+    },
   },
   {
     name: "Come on in, GIRLS",
@@ -100,6 +115,11 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: CARTER,
     players: [CARTER, LINNEA, SHARONDA, ALEXIS, PATT, MIKE],
+    swap: {
+      playerOut: PATT,
+      playerIn: KRISTIN,
+      week: 3,
+    },
   },
   {
     name: "Please Do Well",
@@ -129,6 +149,11 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: SHARONDA,
     players: [ORI, AN, SHARONDA, LINNEA, ERIC, PATT],
+    swap: {
+      playerOut: PATT,
+      playerIn: JELLY,
+      week: 3,
+    },
   },
   {
     name: "Banana Etiquette",
