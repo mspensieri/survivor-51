@@ -13,7 +13,11 @@ export function computeTeamScore(
     fullTimePlayers.splice(fullTimePlayers.indexOf(team.swap.playerOut), 1);
 
     score += computePlayerTotal(team.swap.playerIn, weekNumber, ruleSet);
-    score += computePlayerTotal(team.swap.playerOut, team.swap.week, ruleSet);
+    score += computePlayerTotal(
+      team.swap.playerOut,
+      team.swap.week - 1,
+      ruleSet,
+    );
     score -= computePlayerTotal(
       team.swap.playerIn,
       team.swap.week - 1,
