@@ -44,6 +44,11 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: LINNEA,
     players: [ALEXIS, LEWIS, LINNEA, MIKE, PATT, ORI],
+    swap: {
+      playerOut: PATT,
+      playerIn: JELLY,
+      week: 4,
+    },
   },
   {
     name: "SURVIVOR EXTRAVAGANZA 51",
@@ -141,6 +146,11 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: LINNEA,
     players: [JENNA, LINNEA, AN, SHARONDA, MIKE, ORI],
+    swap: {
+      playerOut: JENNA,
+      playerIn: KRISTIN,
+      week: 4,
+    },
   },
   {
     name: "Play Your Billie Eilish Boomerang Idol",
@@ -162,6 +172,11 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: JELLY,
     players: [AN, JELLY, KILBY, ERIC, JENNA, ORI],
+    swap: {
+      playerOut: JENNA,
+      playerIn: MAGGIE,
+      week: 4,
+    },
   },
   {
     name: "Outwit, Outplay, Out-Rizz",
@@ -199,6 +214,11 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: ERIC,
     players: [ERIC, LINNEA, CARTER, JENNA, ALEXIS, MIKE],
+    swap: {
+      playerOut: JENNA,
+      playerIn: AN,
+      week: 4,
+    },
   },
   {
     name: "Sandy's Spynest",
@@ -207,6 +227,11 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: SHARONDA,
     players: [MIKE, ROB, SHARONDA, JELLY, ERIC, BRADY],
+    swap: {
+      playerOut: ROB,
+      playerIn: AN,
+      week: 4,
+    },
   },
   {
     name: "Here for friendship",
@@ -353,6 +378,11 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: KILBY,
     players: [KILBY, AALIYAH, KRISTIN, ERIC, ROB, SHARONDA],
+    swap: {
+      playerOut: AALIYAH,
+      playerIn: LINNEA,
+      week: 4,
+    },
   },
   {
     name: "Clyde's Castaways",
@@ -377,6 +407,11 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: ORI,
     players: [ALEXIS, CARTER, DEVIN, ERIC, JENNA, ORI],
+    swap: {
+      playerOut: JENNA,
+      playerIn: JELLY,
+      week: 4,
+    },
   },
   {
     name: "The Dils",
