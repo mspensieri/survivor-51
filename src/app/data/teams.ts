@@ -346,8 +346,8 @@ export const teams: Array<Team> = computeHistory([
     winner: PATT,
     players: [PATT, LEWIS, LINNEA, ORI, JELLY, CARTER],
     swap: {
-      playerOut: AN,
-      playerIn: PATT,
+      playerOut: PATT,
+      playerIn: AN,
       week: 5,
     },
   },
