@@ -26,7 +26,7 @@ const {
   ROB,
 } = PLAYERS;
 
-export const SWAP_DEADLINE = 5;
+export const SWAP_DEADLINE = 6;
 
 export const teams: Array<Team> = computeHistory([
   {
@@ -83,6 +83,11 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: JELLY,
     players: [ALEXIS, BRADY, CARTER, CRISTIAN, JELLY, PATT],
+    swap: {
+      playerOut: PATT,
+      playerIn: AN,
+      week: 5,
+    },
   },
   {
     name: "Blindside Baddies",
@@ -293,6 +298,11 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: SHARONDA,
     players: [CARTER, JELLY, JENNA, SHARONDA, MIKE, ORI],
+    swap: {
+      playerOut: JENNA,
+      playerIn: AN,
+      week: 5,
+    },
   },
   {
     name: "Hidden Immunity Stick",
@@ -325,6 +335,11 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: PATT,
     players: [PATT, LEWIS, LINNEA, ORI, JELLY, CARTER],
+    swap: {
+      playerOut: AN,
+      playerIn: PATT,
+      week: 5,
+    },
   },
   {
     name: "Operation Italy",
@@ -346,6 +361,11 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: BRADY,
     players: [BRADY, ORI, ERIC, KRISTIN, JENNA, ALEXIS],
+    swap: {
+      playerOut: JENNA,
+      playerIn: JELLY,
+      week: 5,
+    },
   },
   {
     name: "NO SPOILERS",
@@ -354,6 +374,11 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: PATT,
     players: [ALEXIS, ORI, PATT, JENNA, LINNEA, DEVIN],
+    swap: {
+      playerOut: JENNA,
+      playerIn: CARTER,
+      week: 5,
+    },
   },
   {
     name: "And-im-pissed",
@@ -391,6 +416,11 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: ALEXIS,
     players: [ALEXIS, BRADY, DEVIN, ERIC, JENNA, PATT],
+    swap: {
+      playerOut: ALEXIS,
+      playerIn: LEWIS,
+      week: 5,
+    },
   },
   {
     name: "Jerry-attrics",
