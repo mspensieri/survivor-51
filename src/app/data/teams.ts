@@ -36,6 +36,11 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: CRISTIAN,
     players: [ANA, CARTER, CRISTIAN, KILBY, JELLY, ORI],
+    swap: {
+      playerOut: ORI,
+      playerIn: LEWIS,
+      week: 6,
+    },
   },
   {
     name: "4blackcats",
@@ -96,6 +101,11 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: SHARONDA,
     players: [ANA, CARTER, CRISTIAN, JELLY, ROB, SHARONDA],
+    swap: {
+      playerOut: ANA,
+      playerIn: KILBY,
+      week: 6,
+    },
   },
   {
     name: "Jeff's Dimples",
@@ -117,6 +127,11 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: ALEXIS,
     players: [AALIYAH, ALEXIS, JELLY, KRISTIN, LINNEA, MAGGIE],
+    swap: {
+      playerOut: AALIYAH,
+      playerIn: AN,
+      week: 4,
+    },
   },
   {
     name: "Krull and the Gang",
@@ -203,6 +218,11 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: ORI,
     players: [ALEXIS, JELLY, BRADY, KILBY, MIKE, ORI],
+    swap: {
+      playerOut: ALEXIS,
+      playerIn: SHARONDA,
+      week: 6,
+    },
   },
   {
     name: "Leafs Nation",
@@ -211,6 +231,11 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: LEWIS,
     players: [JENNA, LEWIS, LINNEA, ROB, AN, ALEXIS],
+    swap: {
+      playerOut: JENNA,
+      playerIn: MAGGIE,
+      week: 6,
+    },
   },
   {
     name: "Sole Survivor of Sass",
@@ -245,6 +270,11 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: ALEXIS,
     players: [BRADY, CARTER, ALEXIS, ANA, AALIYAH, CRISTIAN],
+    swap: {
+      playerOut: ALEXIS,
+      playerIn: KRISTIN,
+      week: 6,
+    },
   },
   {
     name: "chud",
@@ -292,6 +322,11 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: BRADY,
     players: [PATT, KILBY, BRADY, ALEXIS, LINNEA, ORI],
+    swap: {
+      playerOut: PATT,
+      playerIn: JELLY,
+      week: 6,
+    },
   },
   {
     name: "Randoms",
@@ -300,6 +335,11 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: JENNA,
     players: [JENNA, DEVIN, PATT, ORI, JELLY, AN],
+    swap: {
+      playerOut: ORI,
+      playerIn: KILBY,
+      week: 6,
+    },
   },
   {
     name: "Totally Oswald",
@@ -321,6 +361,11 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: ALEXIS,
     players: [ALEXIS, JENNA, PATT, LEWIS, CARTER, ORI],
+    swap: {
+      playerOut: ALEXIS,
+      playerIn: JELLY,
+      week: 6,
+    },
   },
   {
     name: "Peff Jobst",
@@ -329,6 +374,11 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: JENNA,
     players: [ALEXIS, KILBY, CARTER, ORI, JENNA, LINNEA],
+    swap: {
+      playerOut: ALEXIS,
+      playerIn: ERIC,
+      week: 6,
+    },
   },
   {
     name: "The Crossover",
@@ -337,6 +387,11 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: ALEXIS,
     players: [JENNA, SHARONDA, ROB, ALEXIS, MIKE, CARTER],
+    swap: {
+      playerOut: ROB,
+      playerIn: KRISTIN,
+      week: 6,
+    },
   },
   {
     name: "The Man, The Myth, The Legend, J-A-K-E, G-O-D.",
@@ -397,6 +452,11 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: KILBY,
     players: [KILBY, JENNA, ANA, LINNEA, ERIC, JELLY],
+    swap: {
+      playerOut: JENNA,
+      playerIn: SHARONDA,
+      week: 6,
+    },
   },
   {
     name: "Ducky and Boinko 4ever",
@@ -405,6 +465,11 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: LINNEA,
     players: [JELLY, DEVIN, KRISTIN, LEWIS, LINNEA, ORI],
+    swap: {
+      playerOut: LINNEA,
+      playerIn: AN,
+      week: 6,
+    },
   },
   {
     name: "Kilby Your Enthusiasm",
@@ -439,6 +504,11 @@ export const teams: Array<Team> = computeHistory([
     },
     winner: MIKE,
     players: [DEVIN, SHARONDA, PATT, KILBY, CARTER, MIKE],
+    swap: {
+      playerOut: PATT,
+      playerIn: JELLY,
+      week: 6,
+    },
   },
   {
     name: "DADDW",
