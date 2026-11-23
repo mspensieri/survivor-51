@@ -497,4 +497,38 @@ export const weeks: Array<Week> = [
       [RuleSet.STANDARD]: { survival: 1, individualImmunity: 2 },
     },
   },
+  {
+    eliminated: [],
+    jury: [LEWIS],
+    AN: {
+      [RuleSet.STANDARD]: { survival: 1 },
+    },
+    CARTER: {
+      [RuleSet.STANDARD]: { survival: 1, individualImmunity: 2 },
+    },
+    CRISTIAN: {
+      [RuleSet.STANDARD]: { survival: 1 },
+    },
+    DEVIN: {
+      [RuleSet.STANDARD]: { survival: 1 },
+    },
+    ERIC: {
+      [RuleSet.STANDARD]: { survival: 1 },
+    },
+    JELLY: {
+      [RuleSet.STANDARD]: { survival: 1 },
+    },
+    LEWIS: {
+      [RuleSet.STANDARD]: { survival: 1, advantage: 1, placement: 2 },
+    },
+    MAGGIE: {
+      [RuleSet.STANDARD]: { survival: 1 },
+    },
+    MIKE: {
+      [RuleSet.STANDARD]: { survival: 1 },
+    },
+    SHARONDA: {
+      [RuleSet.STANDARD]: { survival: 1 },
+    },
+  },
 ];
